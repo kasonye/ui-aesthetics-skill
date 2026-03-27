@@ -1,4 +1,0 @@
-﻿interface:
-  display_name: "UI Aesthetic Distillation"
-  short_description: "Distill and apply high-aesthetic UI prompt guardrails"
-  default_prompt: "Use this skill to convert UI requirements into high-aesthetic prompts with measurable layout, typography, color, motion, consistency, accessibility, and responsive constraints, plus negative constraints and a pass/fail self-check."
