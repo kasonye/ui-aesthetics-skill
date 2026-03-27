@@ -1,0 +1,38 @@
+﻿[
+    {
+        "id":  1,
+        "category":  "留白 (Whitespace)",
+        "scene":  "Form validation error",
+        "positive_prompt":  "Set error text color to #FF4D4F, font-size to 12px, margin-top to 4px, line-height to 1.5, display block, and add an SVG warning icon 14x14px aligned center with the text.",
+        "negative_taboo":  "避免：Make the error message look obvious and red.",
+        "checklist":  [
+                          "Uses #FF4D4F",
+                          "Font size is 12px",
+                          "Margin top is 4px",
+                          "Line height is 1.5",
+                          "Display is block",
+                          "Contains 14px icon"
+                      ],
+        "source":  "gemini_round16_adversarial",
+        "bad_prompt":  "Make the error message look obvious and red.",
+        "delta":  "1) Deleted vague words \u0027obvious\u0027 and \u0027red\u0027. 2) Added hard constraints for hex color #FF4D4F, 12px font size, 4px margin, 1.5 line height, and 14px SVG icon."
+    },
+    {
+        "id":  2,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Hero section text",
+        "positive_prompt":  "Set headline font-family to Inter, font-size to 32px at mobile breakpoint, line-height to 1.1, letter-spacing to -0.02em, text-align to center, and max-width to 300px.",
+        "negative_taboo":  "避免：Make the headline typography feel premium and readable on mobile.",
+        "checklist":  [
+                          "Font family is Inter",
+                          "Font size is 32px",
+                          "Line height is 1.1",
+                          "Letter spacing is -0.02em",
+                          "Text align is center",
+                          "Max width is 300px"
+                      ],
+        "source":  "gemini_round16_adversarial",
+        "bad_prompt":  "Make the headline typography feel premium and readable on mobile.",
+        "delta":  "1) Deleted vague words \u0027premium\u0027 and \u0027readable\u0027. 2) Added hard constraints for 32px size, 1.1 line-height, -0.02em spacing, center alignment, and 300px max-width."
+    }
+]

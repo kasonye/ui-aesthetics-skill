@@ -1,0 +1,647 @@
+﻿[
+    {
+        "id":  1,
+        "category":  "布局 (Layout)",
+        "scene":  "页面整体网格系统设定",
+        "positive_prompt":  "采用12列流式网格系统，列间距(Gutter)设为24px，外边距(Margin)设为32px，卡片容器对齐网格线。",
+        "negative_taboo":  "避免不规则或随意的元素摆放，禁止卡片宽度脱离网格基准线。",
+        "checklist":  [
+                          "是否使用12列网格",
+                          "Gutter是否统一为24px",
+                          "边缘Margin是否不低于32px",
+                          "所有容器块是否对齐列宽",
+                          "是否定义了网格或容器宽度"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  2,
+        "category":  "布局 (Layout)",
+        "scene":  "数据密集型仪表盘 (Dashboard)",
+        "positive_prompt":  "使用模块化卡片布局，使用 CSS Grid 将主体分为 2:1 的左右两栏，左侧主显区放置核心图表，右侧放辅助指标。",
+        "negative_taboo":  "禁止使用无边界分割线导致数据粘连，避免超过3种不同宽度的卡片交错出现。",
+        "checklist":  [
+                          "卡片之间是否有明确间距",
+                          "主体是否遵循2:1比例",
+                          "卡片宽度规格是否控制在3种以内",
+                          "是否定义了网格或容器宽度",
+                          "是否定义了区块比例或对齐方式"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  3,
+        "category":  "布局 (Layout)",
+        "scene":  "着陆页 (Landing Page) 首屏设计",
+        "positive_prompt":  "采用非对称布局，左侧占宽40%用于大标题和主CTA，右侧占宽60%用于高质量产品插图或3D模型，垂直居中对齐。",
+        "negative_taboo":  "避免内容全部居中堆砌导致缺乏视觉焦点，禁止文字区域覆盖到复杂背景图形上。",
+        "checklist":  [
+                          "左右比例是否为40/60或类似非对称",
+                          "左右内容是否垂直居中",
+                          "文字可读性是否受背景干扰",
+                          "是否定义了网格或容器宽度",
+                          "是否定义了区块比例或对齐方式"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  4,
+        "category":  "布局 (Layout)",
+        "scene":  "长图文/博客详情页",
+        "positive_prompt":  "正文内容最大宽度限制在680px至720px之间，保持单行字符数在60-75个字符，页面主轴整体水平居中。",
+        "negative_taboo":  "禁止正文区块宽度充满屏幕导致横向阅读疲劳，禁止使用两端对齐(Justify)导致字间距断裂。",
+        "checklist":  [
+                          "正文最大宽度是否\u003c=720px",
+                          "是否左对齐为主",
+                          "大屏下正文容器是否居中",
+                          "是否定义了网格或容器宽度",
+                          "是否定义了区块比例或对齐方式"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  5,
+        "category":  "留白 (Whitespace)",
+        "scene":  "区块之间的垂直间距",
+        "positive_prompt":  "使用基于8px的空间系统(如16,24,32,48,64px)。相邻段落用16px，独立逻辑区块之间使用64px或80px的宏观留白。",
+        "negative_taboo":  "禁止使用非8的倍数(如15px,21px)，禁止将无关组件的间距设得比相关组件更近。",
+        "checklist":  [
+                          "间距值是否能被8整除",
+                          "宏观间距是否明显大于微观间距",
+                          "模块间距是否一致",
+                          "间距是否基于8px系统",
+                          "宏观与微观留白是否区分"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  6,
+        "category":  "留白 (Whitespace)",
+        "scene":  "卡片内部的内边距 (Padding)",
+        "positive_prompt":  "卡片内边距(Padding)应大于或等于卡片内元素之间的间距，默认使用24px或32px的均匀内边距。",
+        "negative_taboo":  "避免卡片四周内边距过小(\u003c12px)导致文字贴边，禁止上下边距小于左右边距。",
+        "checklist":  [
+                          "Padding是否\u003e=24px",
+                          "Padding值是否大于卡片内元素间距",
+                          "四周留白视觉是否均衡",
+                          "间距是否基于8px系统",
+                          "宏观与微观留白是否区分"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  7,
+        "category":  "留白 (Whitespace)",
+        "scene":  "图标与文字的组合",
+        "positive_prompt":  "图标与相邻文字的间距固定为8px，图标视觉中心与文字的X-height保持水平对齐。",
+        "negative_taboo":  "禁止图标与文字紧贴，避免图标尺寸超过文字行高的1.5倍导致留白失衡。",
+        "checklist":  [
+                          "图标与文字间距是否为8px",
+                          "对齐方式是否为垂直居中",
+                          "图标尺寸是否适中",
+                          "间距是否基于8px系统",
+                          "宏观与微观留白是否区分"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  8,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "卡片悬浮/景深层级设定",
+        "positive_prompt":  "通过阴影区分Z轴层级：底层背景使用灰度(N50)，一级卡片纯白无阴影，悬浮层使用多重柔和阴影(Y:8,Blur:24, Opacity:8%)。",
+        "negative_taboo":  "禁止使用纯黑高不透明度阴影(如#000000,30%)，避免同层级元素出现不同的阴影规格。",
+        "checklist":  [
+                          "阴影是否基于多重参数",
+                          "悬浮元素阴影是否具有明显抬升感",
+                          "阴影颜色是否融入环境色",
+                          "主次信息是否一眼可辨",
+                          "强调元素数量是否克制"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  9,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "信息卡片内的内容主次",
+        "positive_prompt":  "标题使用16px加粗且颜色Gray-900，辅助文本使用14px常规体且颜色Gray-500，次要操作按钮使用Ghost样式。",
+        "negative_taboo":  "禁止所有文本使用相同字号和颜色，避免一个卡片内出现两个以上高亮主色按钮。",
+        "checklist":  [
+                          "文字是否有黑白灰三个层级",
+                          "字号是否有明显大小区分",
+                          "主按钮是否只有一个",
+                          "主次信息是否一眼可辨",
+                          "强调元素数量是否克制"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  10,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "页面顶导与侧导栏",
+        "positive_prompt":  "侧边导航栏背景色比主内容区深一个色阶(如侧边#F9FAFB, 主区#FFFFFF)，并通过一条1px透明度灰线(#000000 8%)分割。",
+        "negative_taboo":  "禁止背景色喧宾夺主，避免使用粗重、高对比度分割线破坏整体连贯性。",
+        "checklist":  [
+                          "导航区与主内容区是否有微弱对比",
+                          "分割线是否足够轻量",
+                          "导航当前激活项是否有明确高亮",
+                          "主次信息是否一眼可辨",
+                          "强调元素数量是否克制"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  11,
+        "category":  "字体 (Typography)",
+        "scene":  "标题字体系统 (Headings)",
+        "positive_prompt":  "定义H1至H6的几何倍数递减系统(例如：H1 48px, H2 36px, H3 24px)，行高统一为字号的1.2倍，大标题字间距设为-1%至-2%。",
+        "negative_taboo":  "禁止大标题行高过大(如1.5倍)导致上下脱节，禁止大字号使用正文字距导致松散。",
+        "checklist":  [
+                          "H1-H6是否遵循缩放比例",
+                          "大标题行高是否在1.1-1.2之间",
+                          "大字号字间距是否适当收紧",
+                          "标题与正文字号是否分层",
+                          "行高是否在可读范围"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  12,
+        "category":  "字体 (Typography)",
+        "scene":  "正文字体排版 (Body Text)",
+        "positive_prompt":  "正文字号基础设为16px，行高设定为1.5到1.6倍，字体颜色使用#334155替代纯黑#000000。",
+        "negative_taboo":  "禁止正文字号小于12px，禁止正文使用纯黑(#000000)导致对比刺眼，避免行高小于1.4倍。",
+        "checklist":  [
+                          "正文行高是否为1.5-1.6",
+                          "文字颜色是否为深灰而非纯黑",
+                          "最小字号是否\u003e=12px",
+                          "标题与正文字号是否分层",
+                          "行高是否在可读范围"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  13,
+        "category":  "配色 (Color)",
+        "scene":  "色彩系统基础建立",
+        "positive_prompt":  "构建包含50-900九个层级的色板。主色使用HSL进行明度与饱和度递进。页面60%使用中性色背景，30%次要色调，10%主色用于强调。",
+        "negative_taboo":  "避免直接吸色而无色板系统，禁止大面积使用高饱和主色(\u003e20%覆盖率)，禁止纯色滥用。",
+        "checklist":  [
+                          "是否遵循60-30-10配色法则",
+                          "色板是否有完整层级梯度(50-900)",
+                          "是否通过HSL保持色相一致性",
+                          "是否有完整色阶",
+                          "主色覆盖率是否受控"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  14,
+        "category":  "配色 (Color)",
+        "scene":  "深色模式设计 (Dark Mode)",
+        "positive_prompt":  "背景色使用带主色倾向的深灰(如#0F172A)而非纯黑(#000000)。卡片层级通过变亮而非阴影区分。文字使用不同不透明度白(如87%, 60%)。",
+        "negative_taboo":  "禁止直接反转颜色，禁止深色模式下使用过高饱和主色导致荧光刺眼。",
+        "checklist":  [
+                          "背景是否避免纯黑(#000000)",
+                          "层级是否通过亮度而非阴影区分",
+                          "高亮色是否调低饱和度以适配深色",
+                          "是否有完整色阶",
+                          "主色覆盖率是否受控"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  15,
+        "category":  "动效 (Animation)",
+        "scene":  "微交互反馈 (Micro-interactions)",
+        "positive_prompt":  "按钮Hover加入150-200ms的Ease-out过渡，点击时添加0.95缩放的Spring效果，颜色变化保持平滑。",
+        "negative_taboo":  "禁止时长超过300ms造成拖沓，禁止线性缓动导致机械感。",
+        "checklist":  [
+                          "交互动效时长是否在150-250ms内",
+                          "是否使用非线性缓动函数",
+                          "是否提供即时视觉反馈",
+                          "时长是否在合理范围",
+                          "缓动曲线是否自然"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  16,
+        "category":  "动效 (Animation)",
+        "scene":  "页面/组件转场加载",
+        "positive_prompt":  "页面切换采用骨架屏过渡，骨架屏使用微弱Shimmer，组件进场使用300ms向上8px位移并伴随透明度0到1淡入。",
+        "negative_taboo":  "禁止粗暴Loading圈阻塞视线，避免大量元素同时不同方向进场导致混乱。",
+        "checklist":  [
+                          "进场动画方向是否统一",
+                          "是否优先使用骨架屏",
+                          "动画曲线是否符合物理直觉(Ease-out)",
+                          "时长是否在合理范围",
+                          "缓动曲线是否自然"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  17,
+        "category":  "动效 (Animation)",
+        "scene":  "展开/收起面板 (Accordion/Dropdown)",
+        "positive_prompt":  "内容区展开时使用动态高度，配合250ms Ease-in-out，内部文字在容器展开50%后再淡入。",
+        "negative_taboo":  "禁止无动画生硬切换高度，避免内容瞬间出现挤压周围元素。",
+        "checklist":  [
+                          "展开是否有平滑高度动画",
+                          "内部内容是否有配合的Fade动画",
+                          "收起动画时长是否略快于展开",
+                          "时长是否在合理范围",
+                          "缓动曲线是否自然"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  18,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "按钮体系 (Buttons)",
+        "positive_prompt":  "定义按钮层级：Primary(实心)、Secondary(浅底)、Outline(描边)、Text(文字)。圆角与高度(如32/40/48px)全局统一。",
+        "negative_taboo":  "禁止一个表单内出现不同高度主次按钮，避免同页创建新按钮样式。",
+        "checklist":  [
+                          "同级按钮高度/圆角是否一致",
+                          "Primary按钮每屏是否唯一或克制使用",
+                          "Hover/Active/Disabled状态定义是否齐全",
+                          "同类组件规格是否统一",
+                          "交互状态是否完整"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  19,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "表单输入框 (Input Fields)",
+        "positive_prompt":  "输入框常态边框Gray-300，Focus状态加粗边界并附带3px主色半透明Ring，Label距输入框固定8px，错误提示用12px红字置于下方。",
+        "negative_taboo":  "避免输入框缺少Focus状态导致迷失，禁止Placeholder颜色过深与输入内容混淆。",
+        "checklist":  [
+                          "是否有明确Focus状态",
+                          "Placeholder对比度是否区别于实填内容",
+                          "错误反馈样式与位置是否全局一致",
+                          "同类组件规格是否统一",
+                          "交互状态是否完整"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  20,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "弹窗与抽屉 (Modals \u0026 Drawers)",
+        "positive_prompt":  "遮罩层统一使用#000000不透明度40%并包含4px backdrop blur。关闭按钮统一在右上角，CTA位于右下角。",
+        "negative_taboo":  "禁止遮罩过黑或全透，禁止弹窗随内容无限拉长，需设置max-height并启用内部滚动。",
+        "checklist":  [
+                          "遮罩透明度与模糊是否一致",
+                          "关闭交互(点击外侧/Esc)是否统一",
+                          "主操作按钮位置是否一致",
+                          "同类组件规格是否统一",
+                          "交互状态是否完整"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  21,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "图标风格 (Iconography)",
+        "positive_prompt":  "全站使用同一套SVG图标库。线条粗细统一为1.5px或2px，圆角大小与端点样式全局一致。",
+        "negative_taboo":  "严禁面状和线状图标在同级导航中随意混用，禁止描边粗细不一。",
+        "checklist":  [
+                          "图标线条粗细是否统一",
+                          "图标风格是否规则统一",
+                          "图标边界框大小是否一致",
+                          "同类组件规格是否统一",
+                          "交互状态是否完整"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  22,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "色彩对比度 (Color Contrast)",
+        "positive_prompt":  "文本与背景对比度满足WCAG 2.1 AA。普通文本\u003e=4.5:1，大号文本(\u003e18px) \u003e=3:1。",
+        "negative_taboo":  "禁止浅灰背景配中灰文字导致难辨认，禁止关键操作按钮对比度低于3:1。",
+        "checklist":  [
+                          "正文对比度是否达到4.5:1",
+                          "禁用按钮是否可辨识但不刺眼",
+                          "是否有弱视人群高对比度考量",
+                          "文本对比度是否达标",
+                          "是否保留focus-visible"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  23,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "焦点与键盘导航 (Focus \u0026 Keyboard)",
+        "positive_prompt":  "为所有可交互元素保留:focus-visible，使用2px高亮轮廓线，并用tabindex保证逻辑导航顺序。",
+        "negative_taboo":  "禁止使用 `outline: none;` 直接抹除焦点样式且不替换，避免键盘陷阱。",
+        "checklist":  [
+                          "是否移除了原生focus但增加focus-visible",
+                          "Tab键是否可遍历所有交互元素",
+                          "焦点状态是否有明显视觉变化",
+                          "文本对比度是否达标",
+                          "是否保留focus-visible"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  24,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "触控目标尺寸 (Touch Targets)",
+        "positive_prompt":  "移动端可点击元素的物理尺寸或Hitbox至少44x44 CSS像素，相邻热区间保留至少8px间距。",
+        "negative_taboo":  "避免文字链接或小图标密集排列导致误触，禁止热区仅限于图标像素本身。",
+        "checklist":  [
+                          "触控目标最小是否达44x44px",
+                          "多个按钮排列是否存在误触风险",
+                          "点击热区是否通过padding扩展",
+                          "文本对比度是否达标",
+                          "是否保留focus-visible"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  25,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "断点系统与流式布局 (Breakpoints)",
+        "positive_prompt":  "设定标准断点体系(SM:640px, MD:768px, LG:1024px, XL:1280px)。采用Mobile First，小屏容器宽度100%并调整内边距，大屏再应用复杂多列。",
+        "negative_taboo":  "禁止写死固定宽度(如1200px)导致小屏横向滚动，避免简单按比例缩放而不重排版。",
+        "checklist":  [
+                          "是否采用移动端优先媒体查询",
+                          "小屏是否消除横向滚动条",
+                          "不同断点下布局是否发生合理重构",
+                          "是否采用mobile-first",
+                          "断点体系是否明确"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  26,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "响应式字体与图片",
+        "positive_prompt":  "使用CSS clamp()或calc()实现流式排版(如font-size: clamp(1rem, 2vw + 1rem, 2.5rem))。图片设置max-width:100%、height:auto并使用合理object-fit。",
+        "negative_taboo":  "禁止字体在移动端过大挤占屏幕，禁止图片因容器形变而拉伸失真。",
+        "checklist":  [
+                          "标题和正文字号是否可弹性变化",
+                          "所有图片是否包含max-width:100%",
+                          "图片在不同容器下比例是否正常",
+                          "是否采用mobile-first",
+                          "断点体系是否明确"
+                      ],
+        "source":  "unknown"
+    },
+    {
+        "id":  27,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "登录页",
+        "positive_prompt":  "采用 50/50 的分栏非对称布局。左侧使用高品质 3D 抽象图形或品牌插画，背景色为浅品牌色（如 Blue-50），图片采用 object-cover 铺满；右侧为纯白背景，表单容器最大宽度 400px 并绝对垂直水平居中。输入框高度 48px，使用 1px Gray-300 边框，圆角 8px。主按钮高度 48px，品牌色实心填充，文本 16px 加粗，悬浮时增加 10% 纯黑遮罩的过渡动效。",
+        "negative_taboo":  "避免：设计一个好看的登录页，左边放图片，右边放输入框，按钮要显眼。",
+        "checklist":  [
+                          "左右分栏是否达到 1:1 或确定的网格比例",
+                          "右侧表单最大宽度是否限制在 400px 以内",
+                          "表单容器在屏幕内是否严格垂直且水平居中",
+                          "输入框与主操作按钮高度是否统一（如48px）",
+                          "主按钮是否有明确的悬浮（Hover）状态定义"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  28,
+        "category":  "配色 (Color)",
+        "scene":  "仪表盘",
+        "positive_prompt":  "采用 12 列流式网格，背景色使用深色模式（Gray-900）。顶部放置 4 个跨 3 列的关键指标卡片，卡片内边距 24px，背景为纯黑带有 1px Gray-800 描边。数值数据使用等宽字体（Tabular figures），并以主色或语义色（绿/红）配合 16px 箭头高亮趋势。下方主图表跨 8 列，辅助列表跨 4 列。图表配色避免大面积高饱和实色，改用 10%-20% 透明度的同色系渐变填充。",
+        "negative_taboo":  "避免：做一个数据大屏仪表盘，上面放四个数据卡片，下面放图表，颜色要丰富科技感一点。",
+        "checklist":  [
+                          "整体布局是否严格对齐 12 列网格",
+                          "顶部四张卡片是否均等分且填满行宽",
+                          "核心数据列是否使用了等宽数字字体(Monospaced)",
+                          "图表填充是否使用了低透明度渐变而非刺眼实色",
+                          "深色背景与卡片背景之间是否有明确的层级区分",
+                          "正负趋势是否有图标与语义色彩的双重指示"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  29,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "电商详情",
+        "positive_prompt":  "首屏采用 6:6 网格均分。左侧商品图库区域背景设为 Gray-50，主图比例 4:3 占满容器，底部配 5 个 64x64px 缩略图，间距 12px。右侧信息区自上而下布局：H1 标题使用 28px、1.3倍行高，价格使用 32px 加粗强调并紧跟 14px 灰色的带删除线原价。CTA 区域固定在右侧底部，包含全宽的 56px 高度“加入购物车”主按钮，配 16px 主色半透明微光效果（Glow）。",
+        "negative_taboo":  "避免：商品详情页，左边图片轮播，右边是标题价格和购买按钮，字要大。",
+        "checklist":  [
+                          "主图与右侧文本信息区是否遵循 1:1 对等比例",
+                          "主图是否保持了固定的宽高比且未变形",
+                          "现价与原价是否有明显的字号、颜色和样式(删除线)对比",
+                          "缩略图间距是否统一为系统参数(如12px)",
+                          "主 CTA 按钮高度是否达到移动端易触控标准(≥48px)",
+                          "右侧文本内容行高是否保持在 1.3-1.5 之间"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  30,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "定价页",
+        "positive_prompt":  "使用最大宽度 1200px 的三列等宽网格布局。基础卡片背景纯白，32px 内边距，边框设为 1px Gray-200。中间的“推荐”卡片 Y 轴向上绝对偏移 -16px，添加 4px 的品牌色顶部高亮边框线，并增加多重柔和阴影 (Y:12, Blur:32, Black 8%) 以拉开 Z 轴层级。功能列表使用 14px Gray-600 字体，行距 32px，左侧对齐 16x16px 的品牌色打钩图标。",
+        "negative_taboo":  "避免：弄三个定价卡片，中间那个推荐的要放大，颜色亮一点。",
+        "checklist":  [
+                          "三张定价卡片的底层宽度是否完全一致",
+                          "推荐卡片是否通过阴影和向上位移形成了 Z 轴突起",
+                          "功能列表行距是否足够提供呼吸感(≥32px)",
+                          "推荐卡片是否有明确的徽标(Badge)或顶部色带",
+                          "列表项图标与文本的视觉中心是否垂直居中对齐",
+                          "非主推卡片的按钮是否降级为次级(Secondary/Outline)样式"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  31,
+        "category":  "动效 (Animation)",
+        "scene":  "作品集首页",
+        "positive_prompt":  "采用极简大留白风格（Macro Whitespace）。首屏仅包含占屏幕高度 60vh 的超大排版容器，H1 个人介绍使用 72px 经典衬线体，字间距 -2%，行高 1.1，左对齐。下方的作品展示区采用 2 列非对称交错网格（如左列宽 60%，右列宽 40%，Y轴错位 80px），图片悬浮时触发灰度至彩色的平滑过渡（400ms Ease-out），并伴随 overflow-hidden 下的 1.05 倍放大微缩放。",
+        "negative_taboo":  "避免：设计一个极简的作品集网站，要有个人介绍和作品瀑布流，看起来要高级。",
+        "checklist":  [
+                          "首屏是否具备极强的宏观垂直留白(如通过 vh 单位控制)",
+                          "大标题行高是否针对超大字号做了紧凑处理(≤1.1)",
+                          "大标题字距是否进行了适当收缩(如 -2%)",
+                          "作品列表是否打破了对称性使用了交错/非对称布局",
+                          "图片悬浮动效是否使用了非线性缓动且时长自然(300-400ms)",
+                          "图片缩放动效是否被限制在原有容器边界内(不撑大父级)"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  32,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "移动端设置页",
+        "positive_prompt":  "遵循 iOS/Material 原生规范。背景底色设为全局 Gray-50。设置项按逻辑分组并包装在纯白（#FFFFFF）卡片容器中，卡片圆角 12px，左右外边距 16px。列表项高度固定为 56px，左侧前置图标 24x24px（Gray-500），主文本 16px（Gray-900），右侧放置 Switch 开关或浅灰色 Chevron-right 箭头。同组列表项之间使用 0.5px Gray-200 分割线，且分割线左侧缩进 48px 以精准对齐文本起始位置。",
+        "negative_taboo":  "避免：手机设置页面，一排一排的列表，带开关和箭头，背景灰色。",
+        "checklist":  [
+                          "所有可触控列表项高度是否满足 ≥56px 的标准",
+                          "列表项是否基于功能关联性进行了卡片化分组",
+                          "卡片组之间是否有充分的垂直间距(如 24px)",
+                          "列表内部分割线是否使用了视网膜级细线(如0.5px或透明度线)",
+                          "分割线是否避开了前置图标区（左侧缩进对齐文字）",
+                          "右侧的交互控件(箭头/开关)距离屏幕右边缘的边距是否统一"
+                      ],
+        "source":  "gemini_round3_contrast"
+    },
+    {
+        "id":  33,
+        "category":  "字体 (Typography)",
+        "scene":  "Numbers and Data Table Display",
+        "positive_prompt":  "Ensure numerical alignmentusing tabular figures (tnum) or monospaced fonts. Maintain a minimum cell padding of 16px horizontal and 12px vertical. Right-align all numerical columns. Set header text to font-weight 600 with a font-size of 14px and color contrast ratio ofat least 4.5:1 against the background.",
+        "negative_taboo":  "Avoid left-aligning or center-aligning numbers. Do not use proportional figures for numerical data. Do not use padding less than 8px.",
+        "checklist":  [
+                          "Are all numerical columns right-aligned?",
+                          "Isa tabular or monospaced font used for numbers?",
+                          "Is the horizontal cell padding \u003e= 16px?",
+                          "Is the vertical cell padding \u003e= 12px?",
+                          "Is the header font-weight exactly 600?",
+                          "Is the text-to-background contrast ratio \u003e= 4.5:1?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  34,
+        "category":  "字体 (Typography)",
+        "scene":  "Mixed Multi-language Typography",
+        "positive_prompt":  "Add exactly 0.25em (or 4px) spacing between CJK characters and Western letters/numbers. Usefont-family fallbacks starting with Latin fonts then CJK fonts. Maintain line-height at 1.5 to 1.6 for readability. Ensure minimum font-size is 14px for body text.",
+        "negative_taboo":  "Do not place CJK and Latin characters together without spacing.Do not use CJK fonts to render Latin alphabets. Do not use line-height below 1.4.",
+        "checklist":  [
+                          "Is there a 0.25em or 4px gap between CJK and Latin characters?",
+                          "Are Latin fonts prioritized over CJK fonts in the font-family stack?",
+                          "Is the line-height between 1.5 and 1.6?",
+                          "Is the minimum body font size \u003e= 14px?",
+                          "Is there a gap between CJK characters and Arabic numerals?",
+                          "Are punctuation marks matched to the primary language script?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  35,
+        "category":  "配色 (Color)",
+        "scene":  "Semantic Status Colors",
+        "positive_prompt":  "Use specific hex values for states: Success (#52C41A), Warning (#FAAD14), Error (#FF4D4F), Info (#1890FF). Ensuretext placed on these colors has a contrast ratio of \u003e= 4.5:1. Limit status icon sizes to strictly 16px or 24px. Limit animation duration for state transitions to 200ms.",
+        "negative_taboo":  "Never use color as the sole indicator of status.Do not use low-contrast red/green combinations.",
+        "checklist":  [
+                          "Are exact hex codes used for semantic states?",
+                          "Is the contrast ratio \u003e= 4.5:1 for text on status backgrounds?",
+                          "Are status icons constrained to 16px or 24px?",
+                          "Is the state transition animationduration \u003c= 200ms?",
+                          "Is every status accompanied by a non-color indicator?",
+                          "Does the color palette pass color blindness simulations?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  36,
+        "category":  "配色 (Color)",
+        "scene":  "Gradient Usage",
+        "positive_prompt":  "Limit gradients to a maximum of 3 color stops. Constrain the angle of linear gradients strictly to 45deg, 90deg, or 135deg. Ensure the luminance difference between the start and end colors does not exceed 30%. Background gradients must have an opacity set between 0.05 and 0.15 when layered over white (#FFFFFF).",
+        "negative_taboo":  "Do not use radial gradients for backgrounds. Do not mix more than 3 colors in a single gradient.",
+        "checklist":  [
+                          "Does the gradient have \u003c= 3 color stops?",
+                          "Is the gradient angleexactly 45deg, 90deg, or 135deg?",
+                          "Is the luminance difference between stops \u003c= 30%?",
+                          "Is the gradient opacity between 0.05 and 0.15?",
+                          "Are radial gradients avoided?",
+                          "Are all gradient transitions linear?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  37,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "Keyboard Navigation Focus",
+        "positive_prompt":  "Provide a visible focus outline of exactly 2px solid #005fcc on all interactive elements. Add a focus-offset of 2px.Ensure tabindex follows the visual DOM order starting from 0. Transition duration for focus state must be exactly 100ms.",
+        "negative_taboo":  "Do not set outline: none without providing a custom focus state. Do not use tabindex \u003e 0.",
+        "checklist":  [
+                          "Does the focus outline have a2px width?",
+                          "Is the focus outline color strictly #005fcc?",
+                          "Is the outline-offset exactly 2px?",
+                          "Is the transition duration for the focus state exactly 100ms?",
+                          "Do all interactive elements have a visible focus state?",
+                          "Is tabindex set to 0or -1 exclusively?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  38,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "WCAG Color Contrast",
+        "positive_prompt":  "Maintain a minimum contrast ratio of 4.5:1 for normal text ( = 18px or \u003e= 14px bold). Ensure non-text UI components meet a minimum 3.0:1 ratio. Text shadow blur radius must be at least 4px if used on images.",
+        "negative_taboo":  "Do not use light gray (#CCCCCC) text on white backgrounds. Avoid placing text directly on complex images.",
+        "checklist":  [
+                          "Is the contrast ratio \u003e= 4.5:1 for normal text?",
+                          "Is the contrast ratio \u003e= 3.0:1 for large text?",
+                          "Is the contrastratio \u003e= 3.0:1 for non-text UI components?",
+                          "Is the text shadow blur radius \u003e= 4px when layered on images?",
+                          "Does the palette pass WCAG AA standards?",
+                          "Are contrast checks verified in both light and dark modes?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  39,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "Touch Target Sizing",
+        "positive_prompt":  "Set a minimum touch target size of 44px by 44px for all interactive elements. Ensure a minimum spacing of 8px between adjacent touch targets. Set tap-highlight-colorto transparent with a custom active state triggering within 50ms. Scale down icons inside targets to a maximum of 24px by 24px.",
+        "negative_taboo":  "Avoid inline text links that wrap across multiple lines without sufficient line-height. Do not pack buttons closer than 8px.",
+        "checklist":  [
+                          "Is the minimum touch target size 44px by 44px?",
+                          "Is the minimum spacing between touch targets \u003e= 8px?",
+                          "Is the active state triggered within 50ms?",
+                          "Are icons within touch targets bounded to max 24x24px?",
+                          "Is the default mobile tap-highlight disabled?",
+                          "Are touch targets distinctly separated?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  40,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Breakpoint System",
+        "positive_prompt":  "Implement a mobile-first grid using min-width media queries at320px, 768px, 1024px, and 1440px. Define the grid with 4 columns for mobile (16px gap), 8 for tablet (24px gap), and 12 for desktop (32px gap). Maxcontainer width is 1200px.",
+        "negative_taboo":  "Do not use max-width media queries for primary layout logic. Do not hardcode fixed widths on layout containers.",
+        "checklist":  [
+                          "Are breakpoints set exactly at 320px, 768px, 1024px, and 1440px?",
+                          "Are min-width media queries used for structure?",
+                          "Does the grid have 4 columns with a 16px gap on mobile?",
+                          "Does the grid have 8 columns with a 24px gap on tablet?",
+                          "Does the grid have12 columns with a 32px gap on desktop?",
+                          "Is the maximum container width limited to 1200px?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  41,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Fluid Typography",
+        "positive_prompt":  "UseCSS clamp() for typography. Set the root font size to scale between 14px and 16px. Ensure heading H1 scales from 28px at 320px viewport to 48px at 1440px viewport. Restrict paragraph max-width to 65ch.",
+        "negative_taboo":  "Do not use static px values for global font sizing. Do not allow text lines to exceed 80ch on wide screens.",
+        "checklist":  [
+                          "Is CSS clamp() used for responsive font sizing?",
+                          "Does the root font size scale between 14px and16px?",
+                          "Does the H1 font size scale between 28px and 48px?",
+                          "Is the maximum paragraph line length restricted to 65ch?",
+                          "Are typography variables adjusting fluidly based on viewport?",
+                          "Is scaling constrained within the 320px to 1440px range?"
+                      ],
+        "source":  "gemini_round4_focus"
+    },
+    {
+        "id":  42,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Flexible Media Components",
+        "positive_prompt":  "Set image/video max-width to 100% and height to auto. Enforce an aspect-ratio of16/9 for hero images and 1/1 for avatars. Use srcset with sizes at 400w, 800w, and 1200w. Apply a transition of 300ms ease-in-out for resizing.",
+        "negative_taboo":  "Do not set fixed dimensions that break out of parent containers. Do not override aspect-ratio causing image distortion.",
+        "checklist":  [
+                          "Is max-width set to 100% for all media elements?",
+                          "Is height set to auto for media to prevent distortion?",
+                          "Is the aspect-ratio property explicitly defined?",
+                          "Are responsive images provided at 400w, 800w, and 1200w via srcset?",
+                          "Is there a 300ms ease-in-out transition for resizing?",
+                          "Do media elements stay constrained within parent boundaries?"
+                      ],
+        "source":  "gemini_round4_focus"
+    }
+]

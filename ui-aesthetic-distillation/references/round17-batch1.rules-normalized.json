@@ -1,0 +1,1346 @@
+﻿[
+    {
+        "id":  1,
+        "category":  "布局 (Layout)",
+        "scene":  "SaaS Dashboard Overview",
+        "positive_prompt":  "Container max-width 1440px, sidebar width 240px fixed, main content grid 12 columns, grid gap 24px, card border-radius 8px.",
+        "negative_taboo":  "Avoid full-width fluid layouts without max-width constraints.",
+        "checklist":  [
+                          "Is container max-width exactly 1440px?",
+                          "Is sidebar fixed at 240px?",
+                          "Is the main content using a 12-column grid?",
+                          "Is the grid gap 24px?",
+                          "Is the card border-radius 8px?",
+                          "Are fluid layouts without constraints avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  2,
+        "category":  "配色 (Color)",
+        "scene":  "SaaS Data Visualization Chart",
+        "positive_prompt":  "Chart primary line #2563EB, secondary line #10B981, background #FFFFFF, grid line #E5E7EB (opacity 50%), contrast ratio \u003e= 3:1 for graphic elements.",
+        "negative_taboo":  "Do not use low-contrast colors for data lines.",
+        "checklist":  [
+                          "Is primary line #2563EB?",
+                          "Is secondary line #10B981?",
+                          "Is background #FFFFFF?",
+                          "Is grid line #E5E7EB at 50% opacity?",
+                          "Is graphic contrast ratio \u003e= 3:1?",
+                          "Are low-contrast data lines avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  3,
+        "category":  "字体 (Typography)",
+        "scene":  "SaaS Data Table Headers",
+        "positive_prompt":  "Header font-size 12px, font-weight 600, text-transform uppercase, letter-spacing 0.05em, color #6B7280.",
+        "negative_taboo":  "Do not use regular weight or large font sizes for table headers.",
+        "checklist":  [
+                          "Is header font-size 12px?",
+                          "Is font-weight 600?",
+                          "Is text uppercase?",
+                          "Is letter-spacing 0.05em?",
+                          "Is color #6B7280?",
+                          "Are regular weights avoided for headers?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  4,
+        "category":  "留白 (Whitespace)",
+        "scene":  "SaaS Settings Form Form Field",
+        "positive_prompt":  "Input height 40px, padding-x 16px, margin-bottom 24px between groups, label margin-bottom 8px, border 1px solid #D1D5DB.",
+        "negative_taboo":  "Avoid dense form layouts with less than 16px vertical spacing.",
+        "checklist":  [
+                          "Is input height 40px?",
+                          "Is padding-x 16px?",
+                          "Is group margin-bottom 24px?",
+                          "Is label margin-bottom 8px?",
+                          "Is border 1px solid #D1D5DB?",
+                          "Is spacing \u003e= 16px maintained?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  5,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "SaaS Navigation Menu Mobile",
+        "positive_prompt":  "Breakpoint  = 48px, z-index 50.",
+        "negative_taboo":  "Do not display full horizontal menu on screens below 768px.",
+        "checklist":  [
+                          "Is breakpoint \u003c= 768px used?",
+                          "Is menu overlay 100vw?",
+                          "Is animation duration 300ms?",
+                          "Is touch target \u003e= 48px?",
+                          "Is z-index 50?",
+                          "Is full horizontal menu hidden on mobile?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  6,
+        "category":  "动效 (Animation)",
+        "scene":  "SaaS Toast Notification",
+        "positive_prompt":  "Slide-in translation Y from -20px to 0px, opacity 0 to 1, duration 200ms, easing cubic-bezier(0.4, 0, 0.2, 1), auto-dismiss after 3000ms.",
+        "negative_taboo":  "Avoid instant appearance without transition.",
+        "checklist":  [
+                          "Is Y translation -20px to 0px?",
+                          "Is opacity transition 0 to 1?",
+                          "Is duration 200ms?",
+                          "Is standard easing used?",
+                          "Is auto-dismiss set to 3000ms?",
+                          "Are instant appearances avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  7,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "SaaS Action Button",
+        "positive_prompt":  "Focus-visible outline 2px solid #3B82F6, outline-offset 2px, minimum contrast 4.5:1, aria-label included, click area min 44x44px.",
+        "negative_taboo":  "Do not remove focus outlines on interactive elements.",
+        "checklist":  [
+                          "Is focus outline 2px solid #3B82F6?",
+                          "Is outline-offset 2px?",
+                          "Is contrast ratio \u003e= 4.5:1?",
+                          "Is aria-label present?",
+                          "Is click area \u003e= 44x44px?",
+                          "Are focus outlines preserved?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  8,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "SaaS Page Header",
+        "positive_prompt":  "H1 font-size 32px (line-height 40px), subtitle font-size 16px (color #4B5563), primary action button right-aligned (margin-left auto), bottom border 1px solid #E5E7EB, padding-bottom 24px.",
+        "negative_taboo":  "Avoid equal visual weight between title and subtitle.",
+        "checklist":  [
+                          "Is H1 font-size 32px?",
+                          "Is subtitle font-size 16px?",
+                          "Is subtitle color #4B5563?",
+                          "Is primary button right-aligned?",
+                          "Is bottom padding 24px?",
+                          "Is visual hierarchy clear between title/subtitle?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  9,
+        "category":  "配色 (Color)",
+        "scene":  "Finance Portfolio Balance",
+        "positive_prompt":  "Positive trend text #059669, negative trend text #DC2626, neutral text #111827, background #F9FAFB, all text contrast ratio \u003e= 7:1 against background.",
+        "negative_taboo":  "Do not use light green/red that fails 4.5:1 contrast.",
+        "checklist":  [
+                          "Is positive text #059669?",
+                          "Is negative text #DC2626?",
+                          "Is neutral text #111827?",
+                          "Is background #F9FAFB?",
+                          "Is text contrast \u003e= 7:1?",
+                          "Are accessible green/red shades used?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  10,
+        "category":  "字体 (Typography)",
+        "scene":  "Finance Currency Display",
+        "positive_prompt":  "Font-family tabular-nums, font-size 48px, font-weight 700, letter-spacing -0.02em, currency symbol font-size 24px.",
+        "negative_taboo":  "Avoid proportional fonts for financial figures.",
+        "checklist":  [
+                          "Is tabular-nums used?",
+                          "Is figure font-size 48px?",
+                          "Is font-weight 700?",
+                          "Is letter-spacing -0.02em?",
+                          "Is currency symbol 24px?",
+                          "Are proportional fonts avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  11,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Finance Transaction List",
+        "positive_prompt":  "Row height 64px, avatar 40x40px (border-radius 50%), amount right-aligned, date font-size 14px (color #6B7280), bottom border 1px solid #F3F4F6.",
+        "negative_taboo":  "Do not center-align currency amounts.",
+        "checklist":  [
+                          "Is row height 64px?",
+                          "Is avatar 40x40px?",
+                          "Is avatar circular?",
+                          "Is amount right-aligned?",
+                          "Is date color #6B7280?",
+                          "Is center-alignment of amounts avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  12,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "Finance Transfer Form",
+        "positive_prompt":  "Input error text #B91C1C, error icon 16x16px, aria-invalid=true on input, role=alert on error message, focus shifts to first invalid field on submit.",
+        "negative_taboo":  "Do not rely on color alone to indicate errors.",
+        "checklist":  [
+                          "Is error text #B91C1C?",
+                          "Is error icon present (16x16)?",
+                          "Is aria-invalid=true applied?",
+                          "Is role=alert used for errors?",
+                          "Does focus shift on error?",
+                          "Is color-only indication avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  13,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Finance Login Screen",
+        "positive_prompt":  "Brand logo height 48px, SSL lock icon 14x14px (#9CA3AF), login button height 48px, terms text 12px, input masking toggle (eye icon) present.",
+        "negative_taboo":  "Avoid playful or informal UI elements on authentication screens.",
+        "checklist":  [
+                          "Is logo height 48px?",
+                          "Is lock icon 14x14px?",
+                          "Is button height 48px?",
+                          "Is terms text 12px?",
+                          "Is password masking toggle present?",
+                          "Are informal UI elements avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  14,
+        "category":  "布局 (Layout)",
+        "scene":  "Finance Dashboard Widgets",
+        "positive_prompt":  "Widget min-width 300px, padding 24px, gap 16px flex-wrap, box-shadow 0 4px 6px rgba(0,0,0,0.05), border-radius 12px.",
+        "negative_taboo":  "Avoid widgets narrower than 300px on desktop.",
+        "checklist":  [
+                          "Is widget min-width 300px?",
+                          "Is padding 24px?",
+                          "Is gap 16px?",
+                          "Is box-shadow applied?",
+                          "Is border-radius 12px?",
+                          "Are ultra-narrow widgets avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  15,
+        "category":  "动效 (Animation)",
+        "scene":  "Finance Progress Bar (Transfer)",
+        "positive_prompt":  "Width transition 500ms linear, completion state delay 200ms, success icon scale 0 to 1 in 300ms, color transition #D1D5DB to #10B981, prefers-reduced-motion fallback to 0ms.",
+        "negative_taboo":  "Do not use bouncing or overly playful easing for financial transactions.",
+        "checklist":  [
+                          "Is width transition 500ms?",
+                          "Is completion delay 200ms?",
+                          "Is icon scale 300ms?",
+                          "Is color transition defined?",
+                          "Is prefers-reduced-motion respected?",
+                          "Are bouncy easings avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  16,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Finance Data Table",
+        "positive_prompt":  "Breakpoint \u003c= 1024px switches table to card view, card margin-bottom 16px, label font-weight 600, value text-align right, display:block for rows.",
+        "negative_taboo":  "Avoid horizontal scrolling for critical financial tables on mobile.",
+        "checklist":  [
+                          "Is breakpoint \u003c= 1024px used?",
+                          "Is card margin-bottom 16px?",
+                          "Is label font-weight 600?",
+                          "Is value text-align right?",
+                          "Is display:block applied to rows?",
+                          "Is horizontal scrolling avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  17,
+        "category":  "布局 (Layout)",
+        "scene":  "E-commerce Product Grid",
+        "positive_prompt":  "Grid template columns repeat(auto-fill, minmax(240px, 1fr)), gap 24px, product image aspect-ratio 1/1, title max-lines 2, price font-size 18px.",
+        "negative_taboo":  "Avoid inconsistent image aspect ratios in the grid.",
+        "checklist":  [
+                          "Is minmax 240px used?",
+                          "Is gap 24px?",
+                          "Is image aspect-ratio 1/1?",
+                          "Is title truncated at 2 lines?",
+                          "Is price font-size 18px?",
+                          "Are consistent aspect ratios enforced?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  18,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "E-commerce Add to Cart Button",
+        "positive_prompt":  "Button width 100%, height 48px, background #000000, color #FFFFFF, hover state background #333333, border-radius 4px.",
+        "negative_taboo":  "Avoid different primary button styles across product pages.",
+        "checklist":  [
+                          "Is button width 100%?",
+                          "Is height 48px?",
+                          "Is background #000000?",
+                          "Is text #FFFFFF?",
+                          "Is hover background #333333?",
+                          "Is consistent styling maintained?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  19,
+        "category":  "配色 (Color)",
+        "scene":  "E-commerce Sale Badge",
+        "positive_prompt":  "Badge background #EF4444, text #FFFFFF, font-size 12px, padding 4px 8px, absolute position top 8px left 8px.",
+        "negative_taboo":  "Do not use subtle colors for promotional or discount badges.",
+        "checklist":  [
+                          "Is background #EF4444?",
+                          "Is text #FFFFFF?",
+                          "Is font-size 12px?",
+                          "Is padding 4x8px?",
+                          "Is badge positioned 8px from top/left?",
+                          "Are subtle colors avoided for sales?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  20,
+        "category":  "留白 (Whitespace)",
+        "scene":  "E-commerce Checkout Form",
+        "positive_prompt":  "Section margin-bottom 40px, input field height 48px, input gap 16px, order summary padding 24px, sticky footer height 80px.",
+        "negative_taboo":  "Avoid cramped fields that cause accidental mis-taps on mobile.",
+        "checklist":  [
+                          "Is section margin-bottom 40px?",
+                          "Is input height 48px?",
+                          "Is input gap 16px?",
+                          "Is summary padding 24px?",
+                          "Is sticky footer 80px?",
+                          "Are cramped fields avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  21,
+        "category":  "动效 (Animation)",
+        "scene":  "E-commerce Image Carousel",
+        "positive_prompt":  "Slide transition transform 300ms ease-in-out, auto-play interval 5000ms, pause on hover=true, indicator active width 24px, indicator inactive width 8px.",
+        "negative_taboo":  "Avoid auto-playing carousels without a pause on hover mechanism.",
+        "checklist":  [
+                          "Is slide transition 300ms?",
+                          "Is auto-play interval 5000ms?",
+                          "Does it pause on hover?",
+                          "Is active indicator 24px?",
+                          "Is inactive indicator 8px?",
+                          "Are uninterrupted auto-plays avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  22,
+        "category":  "字体 (Typography)",
+        "scene":  "E-commerce Product Description",
+        "positive_prompt":  "Body font-size 16px, line-height 1.6, paragraph margin-bottom 16px, list padding-left 20px, text color #374151.",
+        "negative_taboo":  "Do not use line-heights below 1.5 for long product descriptions.",
+        "checklist":  [
+                          "Is body font-size 16px?",
+                          "Is line-height 1.6?",
+                          "Is paragraph margin-bottom 16px?",
+                          "Is list padding-left 20px?",
+                          "Is text color #374151?",
+                          "Are tight line-heights avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  23,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "E-commerce Filter Sidebar",
+        "positive_prompt":  "Breakpoint \u003c= 1024px transforms sidebar to bottom sheet, sheet max-height 80vh, border-top-radius 16px, backdrop bg rgba(0,0,0,0.5), z-index 100.",
+        "negative_taboo":  "Do not keep sidebar visible on mobile screens.",
+        "checklist":  [
+                          "Is breakpoint \u003c= 1024px used?",
+                          "Is sheet max-height 80vh?",
+                          "Is border-top-radius 16px?",
+                          "Is backdrop opacity 50%?",
+                          "Is z-index 100?",
+                          "Is sidebar hidden on mobile?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  24,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "E-commerce Product Variations (Color Swatches)",
+        "positive_prompt":  "Swatch size 32x32px, active state border 2px solid #000, aria-label=\u0027Color: Red\u0027, keyboard focus outline offset 2px, contrast of border against bg \u003e= 3:1.",
+        "negative_taboo":  "Do not rely solely on border color to indicate the selected swatch without accessibility labels.",
+        "checklist":  [
+                          "Is swatch 32x32px?",
+                          "Is active border 2px?",
+                          "Is aria-label present?",
+                          "Is outline offset 2px?",
+                          "Is border contrast \u003e= 3:1?",
+                          "Are non-color indicators used for selection?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  25,
+        "category":  "字体 (Typography)",
+        "scene":  "Content Article Page",
+        "positive_prompt":  "Headline H1 font-size 40px, H1 line-height 1.2, Body font-size 18px, Body line-height 1.7, max-width 680px for readability.",
+        "negative_taboo":  "Avoid line lengths exceeding 80 characters for body text.",
+        "checklist":  [
+                          "Is H1 font-size 40px?",
+                          "Is H1 line-height 1.2?",
+                          "Is body font-size 18px?",
+                          "Is body line-height 1.7?",
+                          "Is max-width 680px?",
+                          "Are long line lengths avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  26,
+        "category":  "留白 (Whitespace)",
+        "scene":  "Content Author Bio",
+        "positive_prompt":  "Padding 32px, margin-top 64px, avatar margin-right 24px, bio text margin-top 8px, background #F9FAFB.",
+        "negative_taboo":  "Avoid placing author bio immediately adjacent to article text without divider or whitespace.",
+        "checklist":  [
+                          "Is padding 32px?",
+                          "Is margin-top 64px?",
+                          "Is avatar margin-right 24px?",
+                          "Is bio text margin-top 8px?",
+                          "Is background #F9FAFB?",
+                          "Is sufficient whitespace used before bio?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  27,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "Content Homepage Featured Post",
+        "positive_prompt":  "Featured image aspect-ratio 16/9, title font-size 32px, excerpt font-size 16px, category badge font-weight 700, margin-bottom 48px.",
+        "negative_taboo":  "Do not make featured post typography the same size as standard posts.",
+        "checklist":  [
+                          "Is aspect-ratio 16/9?",
+                          "Is title font-size 32px?",
+                          "Is excerpt font-size 16px?",
+                          "Is category badge font-weight 700?",
+                          "Is margin-bottom 48px?",
+                          "Is featured post visually distinct?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  28,
+        "category":  "配色 (Color)",
+        "scene":  "Content Dark Mode Toggle",
+        "positive_prompt":  "Dark bg #121212, text #E5E7EB, link #60A5FA, primary surface #1E1E1E, contrast ratio \u003e= 4.5:1 for body text.",
+        "negative_taboo":  "Do not use pure white #FFFFFF text on pure black #000000 background (causes halation).",
+        "checklist":  [
+                          "Is dark bg #121212?",
+                          "Is text #E5E7EB?",
+                          "Is link #60A5FA?",
+                          "Is primary surface #1E1E1E?",
+                          "Is contrast ratio \u003e= 4.5:1?",
+                          "Is pure white on pure black avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  29,
+        "category":  "动效 (Animation)",
+        "scene":  "Content Reading Progress Bar",
+        "positive_prompt":  "Height 4px, position fixed top 0, width 0% to 100% based on scroll, transition 100ms linear, color #3B82F6.",
+        "negative_taboo":  "Avoid high latency or jerky updates on scroll progress bars.",
+        "checklist":  [
+                          "Is height 4px?",
+                          "Is position fixed top?",
+                          "Is width scroll-dependent?",
+                          "Is transition 100ms?",
+                          "Is color #3B82F6?",
+                          "Are jerky updates avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  30,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Content Social Share Buttons",
+        "positive_prompt":  "Button size 40x40px, icon size 20x20px, gap 12px, hover opacity 0.8, transition duration 200ms.",
+        "negative_taboo":  "Do not use mismatched icon styles (solid vs outline) within the same group.",
+        "checklist":  [
+                          "Is button size 40x40px?",
+                          "Is icon size 20x20px?",
+                          "Is gap 12px?",
+                          "Is hover opacity 0.8?",
+                          "Is transition 200ms?",
+                          "Are icon styles consistent?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  31,
+        "category":  "响应式 (Responsiveness)",
+        "scene":  "Content Image Gallery",
+        "positive_prompt":  "Desktop grid 3 columns, tablet (\u003c= 768px) 2 columns, mobile (\u003c= 480px) 1 column, gap 16px, image object-fit cover.",
+        "negative_taboo":  "Do not force multi-column grids on mobile screens for galleries.",
+        "checklist":  [
+                          "Is desktop 3 columns?",
+                          "Is tablet 2 columns?",
+                          "Is mobile 1 column?",
+                          "Is gap 16px?",
+                          "Is image object-fit cover?",
+                          "Are forced multi-columns avoided on mobile?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  32,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "Content Blockquote",
+        "positive_prompt":  "Border-left 4px solid #D1D5DB, padding-left 16px, font-style italic, color #4B5563, semantic   or   tag used.",
+        "negative_taboo":  "Do not use blockquotes purely for visual formatting without semantic HTML.",
+        "checklist":  [
+                          "Is border-left 4px?",
+                          "Is padding-left 16px?",
+                          "Is font-style italic?",
+                          "Is color #4B5563?",
+                          "Is semantic tag used?",
+                          "Are non-semantic blockquotes avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  33,
+        "category":  "层级 (Hierarchy)",
+        "scene":  "Education Course Card",
+        "positive_prompt":  "Progress bar height 6px, title font-weight 600, instructor text 14px (#6B7280), card hover translate Y -4px, shadow 0 10px 15px rgba(0,0,0,0.1).",
+        "negative_taboo":  "Avoid burying the completion progress under secondary details.",
+        "checklist":  [
+                          "Is progress bar height 6px?",
+                          "Is title font-weight 600?",
+                          "Is instructor text 14px?",
+                          "Is hover translate Y -4px?",
+                          "Is shadow applied?",
+                          "Is progress highly visible?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  34,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "Education Video Player Controls",
+        "positive_prompt":  "Control height 48px, icon contrast \u003e= 4.5:1, CC button present, focus outline 2px solid #FFF, aria-labels on all buttons.",
+        "negative_taboo":  "Do not hide video controls entirely from keyboard focus.",
+        "checklist":  [
+                          "Is control height 48px?",
+                          "Is contrast \u003e= 4.5:1?",
+                          "Is CC button present?",
+                          "Is focus outline 2px solid?",
+                          "Are aria-labels present?",
+                          "Are controls accessible via keyboard?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  35,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Education Quiz Multiple Choice",
+        "positive_prompt":  "Option padding 16px, border 1px solid #E5E7EB, selected border 2px solid #3B82F6, selected bg #EFF6FF, radio icon 20x20px.",
+        "negative_taboo":  "Avoid changing selection paradigms between different quiz questions.",
+        "checklist":  [
+                          "Is option padding 16px?",
+                          "Is border 1px?",
+                          "Is selected border 2px?",
+                          "Is selected bg #EFF6FF?",
+                          "Is radio icon 20x20px?",
+                          "Is selection paradigm consistent?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  36,
+        "category":  "配色 (Color)",
+        "scene":  "Education Achievement Badge",
+        "positive_prompt":  "Gold #F59E0B, Silver #9CA3AF, Bronze #D97706, glow effect blur 8px, text contrast \u003e= 4.5:1.",
+        "negative_taboo":  "Do not use low-contrast text inside achievement badges.",
+        "checklist":  [
+                          "Is gold #F59E0B?",
+                          "Is silver #9CA3AF?",
+                          "Is bronze #D97706?",
+                          "Is glow blur 8px?",
+                          "Is text contrast \u003e= 4.5:1?",
+                          "Are low-contrast texts avoided in badges?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  37,
+        "category":  "留白 (Whitespace)",
+        "scene":  "Education Curriculum Tree",
+        "positive_prompt":  "Module gap 32px, lesson indent 24px, lesson gap 12px, connector line width 2px, padding-left 16px.",
+        "negative_taboo":  "Avoid dense lists without clear indentation for nested modules.",
+        "checklist":  [
+                          "Is module gap 32px?",
+                          "Is lesson indent 24px?",
+                          "Is lesson gap 12px?",
+                          "Is line width 2px?",
+                          "Is padding-left 16px?",
+                          "Is clear indentation used?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  38,
+        "category":  "动效 (Animation)",
+        "scene":  "Education Correct Answer Feedback",
+        "positive_prompt":  "Scale up to 1.05 then 1.0 in 200ms, color flash to #10B981, confetti particle count 50, duration 1000ms, respects prefers-reduced-motion.",
+        "negative_taboo":  "Do not trigger intense flashing animations that violate WCAG guidelines.",
+        "checklist":  [
+                          "Is scale 1.05 to 1.0?",
+                          "Is duration 200ms?",
+                          "Is color #10B981?",
+                          "Is confetti count 50?",
+                          "Is duration 1000ms?",
+                          "Is prefers-reduced-motion respected?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  39,
+        "category":  "布局 (Layout)",
+        "scene":  "Education Dashboard Grid",
+        "positive_prompt":  "Grid template 1fr 300px on desktop, main content gap 24px, sidebar sticky top 24px, card padding 24px, border-radius 12px.",
+        "negative_taboo":  "Avoid forcing a fixed-width layout on small desktop monitors.",
+        "checklist":  [
+                          "Is desktop grid 1fr 300px?",
+                          "Is main gap 24px?",
+                          "Is sidebar sticky at 24px?",
+                          "Is card padding 24px?",
+                          "Is border-radius 12px?",
+                          "Are fixed-width layouts avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  40,
+        "category":  "字体 (Typography)",
+        "scene":  "Education Math Formulas",
+        "positive_prompt":  "Font-family KaTeX/MathJax, font-size 110% of body, overflow-x auto, padding-y 16px, background #F9FAFB.",
+        "negative_taboo":  "Do not render complex math formulas as raw text without proper math rendering engines.",
+        "checklist":  [
+                          "Is KaTeX/MathJax used?",
+                          "Is font-size 110%?",
+                          "Is overflow-x auto?",
+                          "Is padding-y 16px?",
+                          "Is background #F9FAFB?",
+                          "Are raw text formulas avoided?"
+                      ],
+        "source":  "gemini_round17_vertical_full"
+    },
+    {
+        "id":  41,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Button: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #3B82F6, text #FFF, radius 6px. Hover: bg #2563EB. Active: transform scale(0.98). Disabled: opacity 0.5, pointer-events none. Focus-visible: outline 2px solid #93C5FD, offset 2px. Error: N/A (Buttons don\u0027t typically have error states).",
+        "negative_taboo":  "Avoid missing focus-visible outlines.",
+        "checklist":  [
+                          "Is default bg #3B82F6?",
+                          "Is hover bg #2563EB?",
+                          "Is active scale 0.98?",
+                          "Is disabled opacity 0.5?",
+                          "Is focus-visible outline 2px?",
+                          "Is button radius 6px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  42,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Button Secondary: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #FFF, border 1px solid #D1D5DB, text #374151. Hover: bg #F3F4F6. Active: bg #E5E7EB. Disabled: text #9CA3AF. Focus-visible: outline 2px #3B82F6. Error: N/A.",
+        "negative_taboo":  "Do not use confusing border colors for secondary disabled buttons.",
+        "checklist":  [
+                          "Is default border 1px solid #D1D5DB?",
+                          "Is text #374151?",
+                          "Is hover bg #F3F4F6?",
+                          "Is active bg #E5E7EB?",
+                          "Is disabled text #9CA3AF?",
+                          "Is focus-visible outline 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  43,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Button Ghost: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg transparent, text #3B82F6, padding 8px 16px. Hover: bg #EFF6FF. Active: bg #DBEAFE. Disabled: opacity 0.5. Focus-visible: outline 2px. Error: N/A.",
+        "negative_taboo":  "Avoid background colors in the default state.",
+        "checklist":  [
+                          "Is default bg transparent?",
+                          "Is text #3B82F6?",
+                          "Is padding 8x16px?",
+                          "Is hover bg #EFF6FF?",
+                          "Is active bg #DBEAFE?",
+                          "Is disabled opacity 0.5?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  44,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Input: Default, Hover, Active, Disabled, Focus-visible, Error",
+        "positive_prompt":  "Default: border 1px #D1D5DB, bg #FFF. Hover: border #9CA3AF. Active: N/A (use focus). Disabled: bg #F3F4F6, text #9CA3AF. Focus-visible: border #3B82F6, box-shadow 0 0 0 1px #3B82F6. Error: border #EF4444, text #B91C1C.",
+        "negative_taboo":  "Do not remove border on default inputs.",
+        "checklist":  [
+                          "Is default border 1px #D1D5DB?",
+                          "Is hover border #9CA3AF?",
+                          "Is disabled bg #F3F4F6?",
+                          "Is focus border #3B82F6?",
+                          "Is focus box-shadow 1px?",
+                          "Is error border #EF4444?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  45,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Input Password: Default, Hover, Active, Disabled, Focus-visible, Error",
+        "positive_prompt":  "Default: padding-right 40px, type password. Hover: border #9CA3AF. Active: N/A. Disabled: cursor not-allowed, opacity 0.6. Focus-visible: ring 2px #3B82F6. Error: ring 2px #EF4444.",
+        "negative_taboo":  "Avoid missing eye icon for password toggles.",
+        "checklist":  [
+                          "Is padding-right 40px?",
+                          "Is type password?",
+                          "Is disabled cursor not-allowed?",
+                          "Is disabled opacity 0.6?",
+                          "Is focus ring 2px #3B82F6?",
+                          "Is error ring 2px #EF4444?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  46,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Input Search: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: border-radius 9999px, padding-left 36px, icon absolute. Hover: shadow-sm. Active: N/A. Disabled: bg #F9FAFB. Focus-visible: width expands +20px, ring 2px. Error: N/A.",
+        "negative_taboo":  "Avoid sharp corners on search inputs.",
+        "checklist":  [
+                          "Is border-radius 9999px?",
+                          "Is padding-left 36px?",
+                          "Is icon absolute?",
+                          "Is disabled bg #F9FAFB?",
+                          "Does focus width expand 20px?",
+                          "Is focus ring 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  47,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Modal: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error",
+        "positive_prompt":  "Default: overlay bg rgba(0,0,0,0.5), z-index 50, radius 8px, shadow-xl. Hover: N/A. Active: N/A. Disabled: N/A. Focus-visible: focus trap enabled, first element focused. Error: shake animation 300ms if close prevented.",
+        "negative_taboo":  "Do not allow scrolling of the background body when modal is open.",
+        "checklist":  [
+                          "Is overlay opacity 0.5?",
+                          "Is z-index 50?",
+                          "Is radius 8px?",
+                          "Is shadow-xl used?",
+                          "Is focus trap enabled?",
+                          "Is shake animation 300ms?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  48,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Modal Drawer: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: transform translateX(100%), transition 300ms ease-in-out, width 320px, right 0. Focus-visible: close button ring 2px.",
+        "negative_taboo":  "Avoid instant appearance of drawers.",
+        "checklist":  [
+                          "Is default translateX 100%?",
+                          "Is transition 300ms?",
+                          "Is width 320px?",
+                          "Is position right 0?",
+                          "Is focus-visible ring 2px?",
+                          "Are instant appearances avoided?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  49,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Modal Dialog: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: max-width 400px, top 50%, left 50%, transform translate(-50%, -50%), padding 24px. Focus-visible: outline 2px on primary action.",
+        "negative_taboo":  "Avoid positioning dialogs strictly at the top.",
+        "checklist":  [
+                          "Is max-width 400px?",
+                          "Is top 50%?",
+                          "Is left 50%?",
+                          "Is transform used for centering?",
+                          "Is padding 24px?",
+                          "Is primary action outline 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  50,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Table Row: Default, Hover, Active, Disabled, Focus-visible, Error",
+        "positive_prompt":  "Default: bg #FFF, border-bottom 1px #E5E7EB, height 56px. Hover: bg #F9FAFB. Active: bg #F3F4F6. Disabled: text #9CA3AF, bg #FFF. Focus-visible: outline inset 2px #3B82F6. Error: bg #FEF2F2.",
+        "negative_taboo":  "Avoid missing hover states on interactive table rows.",
+        "checklist":  [
+                          "Is default bg #FFF?",
+                          "Is border-bottom 1px?",
+                          "Is height 56px?",
+                          "Is hover bg #F9FAFB?",
+                          "Is focus outline inset 2px?",
+                          "Is error bg #FEF2F2?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  51,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Table Header: Default, Hover, Active, Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #F9FAFB, font-weight 600, text 12px, padding 12px 16px. Hover: cursor pointer if sortable, bg #F3F4F6. Active: chevron icon rotation 180deg. Focus-visible: outline 2px.",
+        "negative_taboo":  "Avoid lacking visual indicators for sortable columns.",
+        "checklist":  [
+                          "Is bg #F9FAFB?",
+                          "Is font-weight 600?",
+                          "Is padding 12x16px?",
+                          "Is hover bg #F3F4F6?",
+                          "Is icon rotation 180deg?",
+                          "Is focus outline 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  52,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Table Cell: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error",
+        "positive_prompt":  "Default: padding 16px, text 14px, color #374151. Focus-visible: inline edit mode outline 2px #3B82F6. Error: text #B91C1C, tooltip icon 16px.",
+        "negative_taboo":  "Avoid centered text for numerical data.",
+        "checklist":  [
+                          "Is padding 16px?",
+                          "Is text 14px?",
+                          "Is color #374151?",
+                          "Is inline focus outline 2px?",
+                          "Is error text #B91C1C?",
+                          "Is tooltip icon 16px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  53,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Dropdown Trigger: Default, Hover, Active, Disabled, Focus-visible, Error",
+        "positive_prompt":  "Default: icon chevron-down, gap 8px, padding 8px 12px. Hover: bg #F3F4F6. Active: icon rotate 180deg. Disabled: opacity 0.5. Focus-visible: ring 2px #3B82F6. Error: border #EF4444.",
+        "negative_taboo":  "Avoid omitting the chevron indicator.",
+        "checklist":  [
+                          "Is chevron icon used?",
+                          "Is gap 8px?",
+                          "Is padding 8x12px?",
+                          "Is hover bg #F3F4F6?",
+                          "Is icon rotation 180deg?",
+                          "Is focus ring 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  54,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Dropdown Menu: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: absolute top 100%, mt 4px, shadow-lg, border-radius 6px, min-width 160px. Focus-visible: N/A (focus manages items).",
+        "negative_taboo":  "Avoid clipping the dropdown menu within overflow-hidden containers.",
+        "checklist":  [
+                          "Is position absolute top 100%?",
+                          "Is mt 4px?",
+                          "Is shadow-lg applied?",
+                          "Is border-radius 6px?",
+                          "Is min-width 160px?",
+                          "Is clipping avoided?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  55,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Dropdown Item: Default, Hover, Active, Disabled, Focus-visible, Error",
+        "positive_prompt":  "Default: padding 8px 16px, text 14px. Hover: bg #F3F4F6, text #111827. Active: bg #E5E7EB. Disabled: cursor not-allowed, text #9CA3AF. Focus-visible: bg #F3F4F6, outline none. Error: text #DC2626 (destructive).",
+        "negative_taboo":  "Avoid using standard text color for destructive actions inside dropdowns.",
+        "checklist":  [
+                          "Is padding 8x16px?",
+                          "Is text 14px?",
+                          "Is hover bg #F3F4F6?",
+                          "Is active bg #E5E7EB?",
+                          "Is disabled cursor not-allowed?",
+                          "Is destructive text #DC2626?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  56,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Toast Success: Default, Hover, Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #DEF7EC, border-l 4px #059669, padding 16px, min-width 300px. Hover: pause auto-dismiss timer. Focus-visible: outline 2px #059669 on close button.",
+        "negative_taboo":  "Avoid missing close buttons on toasts.",
+        "checklist":  [
+                          "Is bg #DEF7EC?",
+                          "Is border-left 4px #059669?",
+                          "Is padding 16px?",
+                          "Is min-width 300px?",
+                          "Does hover pause timer?",
+                          "Is focus outline 2px?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  57,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Toast Warning: Default, Hover, Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #FEF3C7, border-l 4px #D97706, text #92400E, icon size 20px, z-index 9999. Hover: pause timer. Focus-visible: outline 2px.",
+        "negative_taboo":  "Avoid low contrast for warning text.",
+        "checklist":  [
+                          "Is bg #FEF3C7?",
+                          "Is border-left 4px #D97706?",
+                          "Is text #92400E?",
+                          "Is icon size 20px?",
+                          "Is z-index 9999?",
+                          "Does hover pause timer?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  58,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Toast Error: Default, Hover, Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #FEE2E2, border-l 4px #DC2626, text #991B1B, auto-dismiss disabled (duration 0). Hover: N/A. Focus-visible: outline 2px on retry button.",
+        "negative_taboo":  "Avoid auto-dismissing error toasts.",
+        "checklist":  [
+                          "Is bg #FEE2E2?",
+                          "Is border-left 4px #DC2626?",
+                          "Is text #991B1B?",
+                          "Is auto-dismiss disabled?",
+                          "Is retry button outline 2px?",
+                          "Is error auto-dismiss avoided?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  59,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Tabs Item: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: text #6B7280, border-bottom 2px transparent, padding-b 8px. Hover: border-bottom 2px #D1D5DB. Active: text #3B82F6, border-bottom 2px #3B82F6. Disabled: text #D1D5DB. Focus-visible: ring 2px.",
+        "negative_taboo":  "Avoid removing visual indication of the active tab.",
+        "checklist":  [
+                          "Is default text #6B7280?",
+                          "Is border-bottom 2px transparent?",
+                          "Is hover border 2px #D1D5DB?",
+                          "Is active text #3B82F6?",
+                          "Is active border 2px #3B82F6?",
+                          "Is disabled text #D1D5DB?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  60,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Tabs Container: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: border-bottom 1px solid #E5E7EB, display flex, gap 32px, overflow-x auto, hide scrollbar.",
+        "negative_taboo":  "Avoid tabs wrapping to multiple lines on desktop.",
+        "checklist":  [
+                          "Is border-bottom 1px solid?",
+                          "Is display flex?",
+                          "Is gap 32px?",
+                          "Is overflow-x auto?",
+                          "Is scrollbar hidden?",
+                          "Are multiline tabs avoided?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  61,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Pagination Item: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: size 32x32px, text #374151, border 1px #D1D5DB. Hover: bg #F3F4F6. Active: bg #3B82F6, text #FFF, border #3B82F6. Disabled: opacity 0.5. Focus-visible: ring 2px.",
+        "negative_taboo":  "Avoid lacking active state for current page.",
+        "checklist":  [
+                          "Is size 32x32px?",
+                          "Is border 1px #D1D5DB?",
+                          "Is hover bg #F3F4F6?",
+                          "Is active bg #3B82F6?",
+                          "Is active text #FFF?",
+                          "Is disabled opacity 0.5?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  62,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Pagination Nav: Default, Hover, Active, Disabled, Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: Prev/Next buttons padding 8px 12px, gap 4px. Disabled: cursor not-allowed on first page. Focus-visible: outline 2px.",
+        "negative_taboo":  "Avoid clickable \u0027Previous\u0027 button on the first page.",
+        "checklist":  [
+                          "Is padding 8x12px?",
+                          "Is gap 4px?",
+                          "Is Prev disabled on page 1?",
+                          "Is cursor not-allowed?",
+                          "Is outline 2px?",
+                          "Are arrows present?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  63,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Tooltip: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: bg #1F2937, text #F9FAFB, text 12px, padding 4px 8px, border-radius 4px, delay 200ms.",
+        "negative_taboo":  "Avoid instant tooltips that obstruct UI.",
+        "checklist":  [
+                          "Is bg #1F2937?",
+                          "Is text #F9FAFB?",
+                          "Is text 12px?",
+                          "Is padding 4x8px?",
+                          "Is border-radius 4px?",
+                          "Is delay 200ms?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  64,
+        "category":  "组件一致性 (Consistency)",
+        "scene":  "Tooltip Arrow: Default, Hover (N/A), Active (N/A), Disabled (N/A), Focus-visible, Error (N/A)",
+        "positive_prompt":  "Default: size 8x8px, transform rotate(45deg), bg #1F2937, offset 4px from trigger.",
+        "negative_taboo":  "Avoid detaching the tooltip visually from its trigger.",
+        "checklist":  [
+                          "Is arrow size 8x8px?",
+                          "Is rotation 45deg?",
+                          "Is bg #1F2937?",
+                          "Is offset 4px?",
+                          "Is arrow present?",
+                          "Is tooltip attached?"
+                      ],
+        "source":  "gemini_round17_state_matrix_plus"
+    },
+    {
+        "id":  65,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Keyboard Trap 1",
+        "positive_prompt":  "淇鏉′欢: Modal implementation must use a focus trap library (e.g., focus-trap), listen to \u0027keydown\u0027 for Escape key (keyCode 27), and restore focus to the triggering element upon close. Tab index -1 on modal wrapper. Z-index 999.",
+        "negative_taboo":  "澶辫触鏉′欢: Focus leaves the modal and navigates underlying hidden content, or Escape key does not close the modal.",
+        "checklist":  [
+                          "Is focus-trap implemented?",
+                          "Is Escape key (27) listener present?",
+                          "Is focus restored to trigger on close?",
+                          "Is tab index -1 on wrapper?",
+                          "Is Z-index 999?",
+                          "Is underlying content focus blocked?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  66,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Keyboard Trap 2",
+        "positive_prompt":  "淇鏉′欢: Custom dropdown menu implements ArrowDown and ArrowUp for navigation, Enter to select, spacebar to open, role=\u0027menu\u0027, and role=\u0027menuitem\u0027 with tabindex=\u0027-1\u0027 for items. Focus moved programmatically.",
+        "negative_taboo":  "澶辫触鏉′欢: Custom dropdown requires mouse click to select options and ignores arrow keys.",
+        "checklist":  [
+                          "Is ArrowDown/Up implemented?",
+                          "Is Enter selection implemented?",
+                          "Is spacebar open implemented?",
+                          "Is role=\u0027menu\u0027 present?",
+                          "Is role=\u0027menuitem\u0027 present?",
+                          "Is tabindex=\u0027-1\u0027 on items?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  67,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Keyboard Trap 3",
+        "positive_prompt":  "淇鏉′欢: Date picker widget allows closing via Escape key, calendar dates are navigable via arrow keys, aria-selected=\u0027true\u0027 for current date, role=\u0027dialog\u0027 for popup, focus returns to date input on close.",
+        "negative_taboo":  "澶辫触鏉′欢: Tab key navigation gets stuck indefinitely inside the calendar grid.",
+        "checklist":  [
+                          "Is Escape key close implemented?",
+                          "Are arrow keys navigating dates?",
+                          "Is aria-selected=\u0027true\u0027 used?",
+                          "Is role=\u0027dialog\u0027 applied?",
+                          "Does focus return to input?",
+                          "Is infinite tab loop avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  68,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Keyboard Trap 4",
+        "positive_prompt":  "淇鏉′欢: Embedded iframe (like a video player) has a skip link preceding it, tabindex=\u00270\u0027 on the iframe wrapper, and provides instructions \u0027Press Enter to interact, Shift+Tab to exit\u0027 visually or via aria-describedby.",
+        "negative_taboo":  "澶辫触鏉′欢: Screen reader users tab into the iframe and cannot tab out of it.",
+        "checklist":  [
+                          "Is skip link preceding iframe?",
+                          "Is tabindex=\u00270\u0027 on wrapper?",
+                          "Are interaction instructions provided?",
+                          "Is aria-describedby used?",
+                          "Can users Shift+Tab out?",
+                          "Are focus traps in iframes mitigated?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  69,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Screen Reader Misread 1",
+        "positive_prompt":  "淇鏉′欢: Icon-only button has an aria-label=\u0027Search\u0027 attribute, SVG has aria-hidden=\u0027true\u0027, focus outline 2px, button tag used instead of div, min-height 44px.",
+        "negative_taboo":  "澶辫触鏉′欢: Screen reader reads the raw SVG code or says \u0027unlabeled button\u0027.",
+        "checklist":  [
+                          "Is aria-label present?",
+                          "Is SVG aria-hidden=\u0027true\u0027?",
+                          "Is focus outline 2px?",
+                          "Is button tag used?",
+                          "Is min-height 44px?",
+                          "Is raw SVG reading avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  70,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Screen Reader Misread 2",
+        "positive_prompt":  "淇鏉′欢: Toggle switch uses role=\u0027switch\u0027, aria-checked=\u0027true/false\u0027, label element linked via id/for, visual state change 200ms, hidden native checkbox input for fallback.",
+        "negative_taboo":  "澶辫触鏉′欢: Toggle is implemented as a div changing color, reading as plain text.",
+        "checklist":  [
+                          "Is role=\u0027switch\u0027 used?",
+                          "Is aria-checked dynamic?",
+                          "Is label linked via id/for?",
+                          "Is transition 200ms?",
+                          "Is native checkbox fallback used?",
+                          "Is div-only implementation avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  71,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Screen Reader Misread 3",
+        "positive_prompt":  "淇鏉′欢: Breadcrumb navigation has aria-label=\u0027Breadcrumb\u0027, list tag  , current page has aria-current=\u0027page\u0027, separators have aria-hidden=\u0027true\u0027, gap 8px.",
+        "negative_taboo":  "澶辫触鏉′欢: Screen reader reads separators like \u0027\u003e\u0027 as part of the page title.",
+        "checklist":  [
+                          "Is aria-label=\u0027Breadcrumb\u0027 present?",
+                          "Is   tag used?",
+                          "Is aria-current=\u0027page\u0027 applied?",
+                          "Are separators aria-hidden=\u0027true\u0027?",
+                          "Is gap 8px?",
+                          "Are read separators avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  72,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Screen Reader Misread 4",
+        "positive_prompt":  "淇鏉′欢: Decorative background image uses empty alt=\u0027\u0027, role=\u0027presentation\u0027, CSS background-image instead of img tag where possible, height 200px, width 100%.",
+        "negative_taboo":  "澶辫触鏉′欢: Screen reader reads the image file name for decorative dividers.",
+        "checklist":  [
+                          "Is alt=\u0027\u0027 used?",
+                          "Is role=\u0027presentation\u0027 applied?",
+                          "Is CSS bg-image used?",
+                          "Is height 200px?",
+                          "Is width 100%?",
+                          "Is file name reading avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  73,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Chart Alt Text 1",
+        "positive_prompt":  "淇鏉′欢: Complex bar chart has a visually hidden   with the same data, role=\u0027img\u0027 on the SVG chart, aria-label summarizing trends, contrast \u003e= 3:1 on bars, grid gap 1px.",
+        "negative_taboo":  "澶辫触鏉′欢: The chart only has alt=\u0027Bar chart showing sales\u0027 without data access.",
+        "checklist":  [
+                          "Is hidden   present?",
+                          "Is role=\u0027img\u0027 on SVG?",
+                          "Is summarizing aria-label present?",
+                          "Is contrast \u003e= 3:1?",
+                          "Is grid gap 1px?",
+                          "Is uninformative alt text avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  74,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Chart Alt Text 2",
+        "positive_prompt":  "淇鏉′欢: Pie chart SVG paths have internal   tags, aria-describedby linking to a text summary, distinct patterns for slices, min slice size 5%, labels with contrast \u003e= 4.5:1.",
+        "negative_taboo":  "澶辫触鏉′欢: Pie chart relies purely on color legends without text equivalents.",
+        "checklist":  [
+                          "Are   tags inside SVG?",
+                          "Is aria-describedby used?",
+                          "Are distinct patterns applied?",
+                          "Is min slice size 5%?",
+                          "Is label contrast \u003e= 4.5:1?",
+                          "Are color-only legends avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  75,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Chart Alt Text 3",
+        "positive_prompt":  "淇鏉′欢: Live updating stock chart uses aria-live=\u0027polite\u0027 for significant changes, provides a \u0027download CSV\u0027 link, chart height 300px, line stroke-width 2px, tooltips accessible via focus.",
+        "negative_taboo":  "澶辫触鏉′欢: Chart updates rapidly triggering continuous screen reader interruptions.",
+        "checklist":  [
+                          "Is aria-live=\u0027polite\u0027 used?",
+                          "Is CSV link provided?",
+                          "Is chart height 300px?",
+                          "Is line stroke-width 2px?",
+                          "Are tooltips focusable?",
+                          "Are rapid interruptions avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  76,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Contrast Boundary 1",
+        "positive_prompt":  "淇鏉′欢: Floating Action Button (FAB) on variable background has a box-shadow 0 4px 6px rgba(0,0,0,0.3), border 1px solid rgba(255,255,255,0.1), bg #3B82F6, text #FFF, size 56x56px.",
+        "negative_taboo":  "澶辫触鏉′欢: Button blends into a similarly colored background image.",
+        "checklist":  [
+                          "Is box-shadow applied?",
+                          "Is border 1px solid applied?",
+                          "Is bg #3B82F6?",
+                          "Is text #FFF?",
+                          "Is size 56x56px?",
+                          "Is blending into bg avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  77,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Contrast Boundary 2",
+        "positive_prompt":  "淇鏉′欢: Text overlaid on hero image uses a semi-transparent overlay gradient (opacity 0.6 to 0.9), text color #FFFFFF, font-weight 700, text-shadow 0 2px 4px rgba(0,0,0,0.5), H1 font-size 48px.",
+        "negative_taboo":  "澶辫触鏉′欢: Text fails 4.5:1 contrast ratio against light parts of the image.",
+        "checklist":  [
+                          "Is overlay gradient used?",
+                          "Is text color #FFFFFF?",
+                          "Is font-weight 700?",
+                          "Is text-shadow applied?",
+                          "Is H1 font-size 48px?",
+                          "Is contrast failure avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  78,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Contrast Boundary 3",
+        "positive_prompt":  "淇鏉′欢: Focus outline for links in a dark theme is 2px solid #60A5FA, outline-offset 2px, link color #93C5FD, background #111827, contrast \u003e= 4.5:1.",
+        "negative_taboo":  "澶辫触鏉′欢: Dark theme uses a dark blue focus ring that is invisible on black.",
+        "checklist":  [
+                          "Is focus outline 2px solid #60A5FA?",
+                          "Is outline-offset 2px?",
+                          "Is link color #93C5FD?",
+                          "Is background #111827?",
+                          "Is contrast \u003e= 4.5:1?",
+                          "Are dark focus rings avoided on dark bg?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  79,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Reduced Motion 1",
+        "positive_prompt":  "淇鏉′欢: Parallax scrolling effects are wrapped in @media (prefers-reduced-motion: no-preference), fallback sets transform to none, opacity transition limited to 0ms, scroll-behavior set to auto.",
+        "negative_taboo":  "澶辫触鏉′欢: Users with vestibular disorders are forced to see heavy parallax motion.",
+        "checklist":  [
+                          "Is prefers-reduced-motion checked?",
+                          "Is transform fallback none?",
+                          "Is opacity transition 0ms?",
+                          "Is scroll-behavior auto?",
+                          "Are parallax effects disabled?",
+                          "Is forced motion avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  80,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Reduced Motion 2",
+        "positive_prompt":  "淇鏉′欢: Infinite spinning loaders fallback to a static SVG with a \u0027Loading...\u0027 text, animation-duration set to 0s, role=\u0027status\u0027, aria-live=\u0027polite\u0027, minimum display time 500ms.",
+        "negative_taboo":  "澶辫触鏉′欢: Continuous spinning animations cannot be stopped by user OS settings.",
+        "checklist":  [
+                          "Is static SVG fallback used?",
+                          "Is animation-duration 0s?",
+                          "Is role=\u0027status\u0027 applied?",
+                          "Is aria-live=\u0027polite\u0027 used?",
+                          "Is min display time 500ms?",
+                          "Are unstoppable spinners avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  81,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Reduced Motion 3",
+        "positive_prompt":  "淇鏉′欢: Page transitions use a simple opacity crossfade (max 150ms) instead of heavy slide-ins when prefers-reduced-motion is true. Translate values set to 0. Scale set to 1.",
+        "negative_taboo":  "澶辫触鏉′欢: Entire pages sliding in from the right causing motion sickness.",
+        "checklist":  [
+                          "Is opacity crossfade used?",
+                          "Is duration max 150ms?",
+                          "Are translate values 0?",
+                          "Is scale set to 1?",
+                          "Is prefers-reduced-motion respected?",
+                          "Are heavy slide-ins avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  82,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Form Error 1",
+        "positive_prompt":  "淇鏉′欢: Inline form error messages appear immediately below the input, font-size 12px, color #D92D20, input aria-describedby linked to error ID, focus ring 2px #D92D20.",
+        "negative_taboo":  "澶辫触鏉′欢: Errors are only summarized at the top of a long form without inline indicators.",
+        "checklist":  [
+                          "Are errors below inputs?",
+                          "Is font-size 12px?",
+                          "Is color #D92D20?",
+                          "Is aria-describedby used?",
+                          "Is focus ring 2px #D92D20?",
+                          "Are inline indicators present?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  83,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Form Error 2",
+        "positive_prompt":  "淇鏉′欢: Error summary box at form top has role=\u0027alert\u0027, tabindex=\u0027-1\u0027, focus is programmatically moved to it on submit, border-left 4px #D92D20, padding 16px.",
+        "negative_taboo":  "澶辫触鏉′欢: Screen reader does not announce the error summary when the form fails submission.",
+        "checklist":  [
+                          "Is role=\u0027alert\u0027 used?",
+                          "Is tabindex=\u0027-1\u0027 applied?",
+                          "Is focus moved on submit?",
+                          "Is border-left 4px #D92D20?",
+                          "Is padding 16px?",
+                          "Is unannounced failure avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    },
+    {
+        "id":  84,
+        "category":  "可访问性 (Accessibility)",
+        "scene":  "A11y Hardening - Form Error 3",
+        "positive_prompt":  "淇鏉′欢: Password requirement list updates dynamically with aria-live=\u0027polite\u0027, successful rules turn #059669 with a check icon (16px), margin-bottom 8px per rule, font-size 12px.",
+        "negative_taboo":  "澶辫触鏉′欢: Users only find out password requirements after submitting the form.",
+        "checklist":  [
+                          "Is aria-live=\u0027polite\u0027 used?",
+                          "Do successful rules turn #059669?",
+                          "Is check icon 16px?",
+                          "Is margin-bottom 8px?",
+                          "Is font-size 12px?",
+                          "Are post-submit-only rules avoided?"
+                      ],
+        "source":  "gemini_round17_a11y_hardening"
+    }
+]
