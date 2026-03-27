@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Aesthetics"
+  short_description: "Upgrade web UI generation, review, and refactors"
+  default_prompt: "Use -aesthetics to improve this web UI's visual direction, hierarchy, and UX."
