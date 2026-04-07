@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Aesthetics"
-  short_description: "Make web UI balanced and polished without inflating scope"
-  default_prompt: "Use $ui-aesthetics to make this UI more balanced, professional, and product-grade while preserving the requested scope, avoiding generic AI page chrome, and keeping card copy concise."
+  short_description: "Refine web UI composition, components, states, motion, and depth"
+  default_prompt: "Use $ui-aesthetics to make this UI more balanced, precise, and product-grade while preserving scope, improving component craftsmanship and state behavior, and keeping motion and depth restrained and coherent."

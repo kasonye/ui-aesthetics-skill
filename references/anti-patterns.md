@@ -102,6 +102,34 @@ Corrective move:
 - let spacing and typography separate content
 - keep only a small set of surface treatments
 
+## Border Soup
+
+Symptoms:
+
+- borders appear on nearly every card, input, panel, and nested region
+- boxes are used to explain relationships that spacing should already make clear
+- the interface looks like a wireframe that never became a product
+
+Corrective move:
+
+- remove unnecessary strokes first
+- re-establish grouping through spacing, alignment, and type hierarchy
+- keep borders for true structure, not default separation
+
+## Loud Default State
+
+Symptoms:
+
+- resting controls already use strong contrast, shadows, or color
+- the screen feels busy before any interaction happens
+- hover, focus, and error states have no visual headroom left
+
+Corrective move:
+
+- quiet the resting state first
+- reserve stronger emphasis for interaction and semantic states
+- let default hierarchy come from spacing, tone, and typography
+
 ## Muddy Premium Palette
 
 Symptoms:
@@ -132,6 +160,34 @@ Corrective move:
 - keep glow minimal and rare, limited to active emphasis or subtle separation
 - let borders and contrast carry most separation
 
+## Fake Premium Blur
+
+Symptoms:
+
+- blur is used to imply sophistication instead of solving layering
+- cards, overlays, or hero areas feel hazy rather than precise
+- dark UI leans on foggy effects instead of surface hierarchy
+
+Corrective move:
+
+- remove blur and test whether structure still holds
+- rebuild depth through luminance, edge definition, and restrained layering
+- reintroduce blur only where it genuinely improves separation
+
+## Permanent Glow
+
+Symptoms:
+
+- primary buttons, cards, or idle controls glow in their resting state
+- multiple elements all appear equally “special”
+- the page tires the eye before interaction begins
+
+Corrective move:
+
+- treat glow as exceptional, not structural
+- reserve it for rare active, semantic, or high-value focal signals
+- rebuild emphasis through hierarchy before adding luminous effects
+
 ## Motion As Decoration
 
 Symptoms:
@@ -146,6 +202,48 @@ Corrective move:
 - shorten durations
 - remove overlapping motion channels on the same element
 
+## Hover Theater
+
+Symptoms:
+
+- ordinary controls lift, bloom, tilt, or glow dramatically on hover
+- the user notices the effect more than the affordance
+- list density breaks because each row performs on cursor contact
+
+Corrective move:
+
+- keep hover local, short, and low-drama
+- prefer contrast or tone shifts over visible travel
+- reserve stronger motion for overlays or clearly elevated surfaces
+
+## Selected / Pressed Confusion
+
+Symptoms:
+
+- persistent selected items look like they are being actively clicked
+- active feedback looks identical to an ongoing chosen state
+- tabs, chips, or filters feel semantically muddy
+
+Corrective move:
+
+- keep pressed states transient and mechanical
+- keep selected states persistent and structurally clear
+- use different channels for interaction feedback versus lasting choice
+
+## Panel Float Syndrome
+
+Symptoms:
+
+- cards, drawers, sticky regions, and overlays all appear lifted to the same degree
+- surface hierarchy collapses into one broad floating layer
+- nothing feels anchored to the page plane
+
+Corrective move:
+
+- flatten the base layer first
+- reserve stronger elevation for true overlays and justified breakouts
+- make each level of depth earn its separation
+
 ## False Minimalism
 
 Symptoms:
@@ -156,10 +254,38 @@ Symptoms:
 
 Corrective move:
 
-- strengthen alignment, scale, and focal contrast
 - strengthen alignment, spacing, and copy hierarchy
+- strengthen focal contrast through composition before adding effects
 - let whitespace support hierarchy rather than replace it
 - make the primary message more decisive
+
+## Wall Of White
+
+Symptoms:
+
+- every card and panel sits on the same pure-white field with little grouping context
+- the eye struggles to anchor structural regions
+- dashboard layouts feel scattered despite having enough whitespace
+
+Corrective move:
+
+- introduce subtle field separation only where it clarifies structure
+- group related regions through tone and spacing before adding more containers
+- keep the background system calm and limited
+
+## Role Confusion
+
+Symptoms:
+
+- tabs behave like pills, drawers behave like modals, tables behave like card grids
+- controls borrow visual language from unrelated patterns
+- the UI feels trend-driven rather than semantically clear
+
+Corrective move:
+
+- restore the intended role of each component
+- let structure and behavior follow the interaction pattern, not a visual fad
+- simplify styling until the component reads correctly again
 
 ## Desktop Shrink-On-Mobile
 

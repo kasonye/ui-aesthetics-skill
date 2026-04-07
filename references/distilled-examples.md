@@ -91,3 +91,107 @@ Portable Rules:
 Failure Signal Prevented:
 
 - Prevents reviews that list superficial CSS tweaks while missing the actual reason the page feels cheap.
+
+## Worked Example: Component Refinement For A Primary Action Row
+
+Task:
+
+- Refactor a button, input, and select row that feels generic despite acceptable page layout.
+
+Chosen Thesis:
+
+- `quiet control precision`
+
+Observed Strengths:
+
+- Related controls were rebuilt with compatible heights, radius discipline, and calmer default states.
+- The primary button felt stronger through geometry and pressed feedback rather than glow or gradient.
+- The input and select stopped competing with the call to action and began acting like members of one system.
+
+Portable Rules:
+
+- Component quality often comes from metric consistency before styling detail.
+- Quiet default states make focused and active states feel more intentional.
+- Buttons, inputs, and selects should feel related in scale, padding, and behavioral weight.
+
+Failure Signal Prevented:
+
+- Prevents the common pattern where individual controls look polished in isolation but feel mismatched, noisy, or template-like when placed together.
+
+## Worked Example: State Cleanup In A Dense Filter Bar
+
+Task:
+
+- Fix a filter bar where hover, selected, and pressed states all feel visually confused.
+
+Chosen Thesis:
+
+- `quiet defaults with decisive state contrast`
+
+Observed Strengths:
+
+- The resting bar became visually quieter, leaving room for interaction states to matter.
+- Selected filters became persistent and structural instead of looking like a click animation frozen in place.
+- Hover and pressed states were reduced to short, local confirmation rather than attention-seeking motion.
+
+Portable Rules:
+
+- Selected state must read as lasting choice, not transient physical feedback.
+- If the default state is too loud, every later state becomes muddy.
+- Small controls need fewer state channels, not more.
+
+Failure Signal Prevented:
+
+- Prevents selected and pressed behavior from collapsing into one noisy visual language.
+
+## Worked Example: Motion Cleanup For Tabs And Overlays
+
+Task:
+
+- Refine a UI where tabs, dropdowns, and modals all feel sluggish and over-animated.
+
+Chosen Thesis:
+
+- `fast structural motion`
+
+Observed Strengths:
+
+- Tab content stopped fading and instead switched decisively while the active indicator carried the motion.
+- Dropdowns opened from the trigger context without staged assembly.
+- Modal and drawer transitions established layer changes without becoming scene changes.
+
+Portable Rules:
+
+- Motion should orient the user, not make them wait for content they already requested.
+- Overlays can carry more spatial movement than routine controls, but still need restraint.
+- If motion becomes memorable as animation, it is probably too slow or too decorative.
+
+Failure Signal Prevented:
+
+- Prevents hover theater, lagging tab transitions, and overlay motion that feels cinematic rather than product-grade.
+
+## Worked Example: Dark UI Depth Rescue
+
+Task:
+
+- Improve a dark dashboard that relies on glow and muddy shadows to fake sophistication.
+
+Chosen Thesis:
+
+- `luminous restraint`
+
+Observed Strengths:
+
+- Surface hierarchy was rebuilt through luminance steps before any glow was reintroduced.
+- Most cards were flattened back into the base plane, leaving elevation for overlays and focal elements only.
+- Edge definition and restrained highlights made the interface feel sharper and more credible.
+
+Portable Rules:
+
+- In dark UI, depth usually reads more clearly through surface contrast and edge definition than through shadow alone.
+- Glow should remain rare enough to still communicate priority.
+- If every card floats, nothing feels elevated.
+
+Failure Signal Prevented:
+
+- Prevents the common dark-mode failure where blur, glow, and equal-elevation panels turn the interface into premium-looking fog.
