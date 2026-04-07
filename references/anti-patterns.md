@@ -32,6 +32,20 @@ Corrective move:
 - constrain inner content areas intentionally instead of boxing the whole page
 - reserve centered shells for components, dialogs, or specific editorial use cases
 
+## Centered Platform Slab
+
+Symptoms:
+
+- a marketplace, ecommerce, portal, or activity page is wrapped inside one oversized centered card
+- side rails, hero framing, and product streams all compete inside one compressed central block
+- the main visual and product grid feel squeezed even though the viewport has plenty of width
+
+Corrective move:
+
+- expand the page skeleton across the viewport first
+- keep full-page framing flat or lightly structured, then card only the modules that truly need separation
+- let category rails, hero zones, campaign bands, and product streams claim horizontal space according to their role
+
 ## Scope Inflation
 
 Symptoms:

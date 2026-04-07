@@ -20,10 +20,12 @@ Read this file when the UI direction is underspecified, when the output feels ge
 
 - Choose a stable primary block for the first read.
 - If the artifact is a page, let the outer composition use the viewport width by default instead of centering the whole experience in a narrow box.
+- For platform, marketplace, or ecommerce pages, build a full-width outer skeleton first and constrain only the inner content zones that need readable measure.
 - Make supporting modules clearly subordinate without relying on visual shock.
 - Use alignment, spacing, width discipline, and scale to create hierarchy.
 - Prefer balanced compositions and predictable alignment over expressive asymmetry.
 - Remove wrappers that do not improve grouping.
+- Do not turn a platform homepage into one oversized centered panel; card modules selectively, not the whole page at once.
 
 ## 4. Prefer Simplicity With Intent
 

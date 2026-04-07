@@ -51,6 +51,7 @@ If the request mixes review and refactor, diagnose first, then choose rewrite de
 - Treat "premium" as restraint, consistency, and precision, not visual noise.
 - Use fewer containers, fewer accents, and fewer simultaneous ideas.
 - If the requested artifact is a page, default to a full-viewport composition that fills the screen width rather than a small centered canvas.
+- For platform, marketplace, ecommerce, or portal-style pages, use a full-width page skeleton by default and constrain inner content intentionally instead of trapping the whole experience inside one centered panel.
 - Default to preserving the user's information density and copy footprint.
 - Do not add hero copy, marketing paragraphs, navigation, footer, feature sections, badges, or CTA clusters unless the request requires them.
 - Keep ordinary cards terse. Prefer strong labels, values, and compact supporting text over invented blurbs.
@@ -93,10 +94,11 @@ If the page still fails in grayscale, the structure is not solved yet.
 5. If the request is for a card or component, use only the minimum surrounding canvas needed to present it clearly.
 6. Preserve the copy footprint unless the user asks for content design. Tighten wording if needed, but do not invent extra explanatory text.
 7. If the request is for a page, let the outer layout span the viewport by default instead of floating as a narrow centered slab.
-8. Define the color logic: neutrals first, accent second.
-9. Make component metrics, states, and behavior feel systemized before adding polish.
-10. Add depth and motion only after the static composition works.
-11. Make desktop and mobile behavior explicit when the requested artifact actually spans both.
+8. For platform or ecommerce pages, expand the page skeleton first: let navigation, hero framing, category rails, campaign zones, and product streams breathe across the viewport before carding individual modules.
+9. Define the color logic: neutrals first, accent second.
+10. Make component metrics, states, and behavior feel systemized before adding polish.
+11. Add depth and motion only after the static composition works.
+12. Make desktop and mobile behavior explicit when the requested artifact actually spans both.
 
 Read `references/design-principles.md` when the visual direction is still vague.
 Read `references/color-system.md` when the palette feels loud, flat, or cheap.
@@ -146,6 +148,7 @@ Reject outputs that rely on:
 - scope inflation that turns a component request into a full page, dashboard shell, or landing layout
 - decorative copy inflation that adds filler descriptions, badges, stats, or CTA blocks not requested
 - page-level layouts trapped inside unnecessarily narrow centered shells without a content reason
+- platform or ecommerce pages boxed into one oversized centered card instead of using a full-width page skeleton
 - template-like center-stacked hero plus card grid layouts
 - unstable or forced-asymmetric layouts used to create tension
 - equal-weight modules with no clear reading order
@@ -171,6 +174,7 @@ Before final output, check:
 - Is the first read obvious within three seconds?
 - Does the layout still feel credible and well-balanced without gradients and shadows?
 - If this is a page, does the composition actually occupy the screen width by default?
+- If this is a platform or ecommerce page, does the outer skeleton expand across the viewport while only inner content areas stay constrained?
 - Did the copy stay as short as the task allows, especially on ordinary cards?
 - Are neutrals calm and consistent enough for the accent color to mean something?
 - Did the palette avoid defaulting to creamy or warm-white luxury cues without a content reason?

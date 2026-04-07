@@ -95,6 +95,7 @@ Follow this order:
 - If several related controls fail to share compatible heights, radii, padding, or state logic, the system needs at least medium restructure.
 - If selected and pressed states are confused, treat that as a system issue, not a local styling bug.
 - If every panel feels lifted, flatten the interface before deciding what truly deserves elevation.
+- If a platform or ecommerce page feels squeezed, remove the outer mega-card first and rebuild it as a full-width page skeleton with constrained inner zones.
 - If motion is more noticeable than the task, remove it first and then reintroduce only the transitions that clarify response or hierarchy.
 
 ## Output Contract
