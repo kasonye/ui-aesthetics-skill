@@ -2,99 +2,175 @@
 
 ## Use This File
 
-Read this file when a result feels like generic AI UI, when "premium" styling is becoming superficial, or when a review needs concrete language for visual failures.
+Read this file when the output looks polished on first glance but still feels generic, noisy, or cheap.
 
-## Flat Hierarchy
-
-Symptoms:
-
-- every card has similar weight
-- no section dominates the viewport
-- headings, body text, and metadata feel visually interchangeable
-
-Corrective move:
-
-- pick one focal area
-- increase contrast between primary and secondary content
-- reduce the number of equally loud surfaces
-
-## Center-Stacked Generic SaaS Layout
+## Template Hero Plus Card Grid
 
 Symptoms:
 
-- headline, paragraph, and button centered above a predictable card grid
-- no compositional tension
-- layout could belong to any startup in any category
+- centered headline, paragraph, and CTA above a predictable feature grid
+- every section feels interchangeable with any SaaS landing page
+- the page has no product structure or hierarchy
 
 Corrective move:
 
-- choose a stronger alignment system
-- vary block widths and emphasis
-- make the page structure respond to the actual content
+- choose a clearer alignment system
+- establish a stable primary block in the first viewport
+- vary density only where the content role truly requires it
 
-## Decorative Polish Without Structure
+## Narrow Page Shell
 
 Symptoms:
 
-- gradients, blur, or shadow are doing most of the work
-- the page still looks weak when stripped to grayscale
-- ornament is hiding poor hierarchy
+- a full page sits inside a small centered card-like wrapper without a product reason
+- large amounts of screen width are left unused on desktop
+- the result feels like a mockup pasted onto the page instead of a real page layout
 
 Corrective move:
 
-- inspect the layout without decoration
-- fix focus, grouping, and spacing before reintroducing effects
+- let page-level layouts span the viewport by default
+- constrain inner content areas intentionally instead of boxing the whole page
+- reserve centered shells for components, dialogs, or specific editorial use cases
 
-## Radius And Border Overload
+## Scope Inflation
 
 Symptoms:
 
-- every surface has heavy rounding
-- borders are used on almost everything
-- the interface looks padded but not purposeful
+- a card, widget, or modal prompt gets expanded into a full page or dashboard shell
+- navigation, hero copy, footer, or extra sections appear without being requested
+- the result feels like a themed demo site instead of the artifact the user asked for
 
 Corrective move:
 
-- reduce treatments to a small system
-- use contrast, spacing, and typography to create separation
+- lock the requested artifact type before designing
+- keep any surrounding canvas minimal and visually quiet
+- spend the effort on the requested component itself rather than invented page chrome
 
-## Monotone Card Rhythm
+## Copy Inflation
 
 Symptoms:
 
-- repeated cards create a wallpaper effect
-- eye movement has no clear sequence
-- supporting content competes with the primary message
+- ordinary cards receive extra headlines, blurbs, badges, or CTA text that were not requested
+- visual polish comes from added words instead of better hierarchy
+- the interface feels verbose for the amount of functionality it actually has
 
 Corrective move:
 
-- vary scale or layout role
-- compress secondary information
-- give one module dominance and let the rest support it
+- preserve the original information density by default
+- tighten labels and supporting text instead of multiplying them
+- add new copy only when it solves a functional or clarity problem
 
-## Fake Premium Styling
+## Forced Asymmetry
 
 Symptoms:
 
-- dark background plus glow plus gradient equals "premium"
-- expensive-looking surfaces with weak copy hierarchy
-- dramatic styling but no strong action path
+- columns, offsets, or card sizes are intentionally imbalanced without a product reason
+- the layout leans on tension to feel designed
+- the page tries to look bespoke by breaking alignment discipline
 
 Corrective move:
 
-- define what should feel premium: restraint, confidence, materiality, contrast, or editorial composition
-- rebuild the hierarchy around that decision
+- restore structural balance first
+- use hierarchy through spacing, typography, and grouping instead of imbalance
+- keep deviations from symmetry rare and content-driven
+
+## Equal-Weight Everything
+
+Symptoms:
+
+- every card, badge, and section competes for the same attention
+- there is no fast path for the eye
+- the page feels busy despite having enough whitespace
+
+Corrective move:
+
+- reduce the number of visually loud surfaces
+- decide what is primary, secondary, and tertiary
+- compress secondary modules
+
+## Surface Inflation
+
+Symptoms:
+
+- too many boxes, strokes, shadows, pills, and rounded corners
+- layout feels padded but not precise
+- components look "designed" individually but weak together
+
+Corrective move:
+
+- remove non-essential containers
+- let spacing and typography separate content
+- keep only a small set of surface treatments
+
+## Muddy Premium Palette
+
+Symptoms:
+
+- neutral colors shift too much from section to section
+- accent colors appear in too many places
+- "premium" is attempted through dark backgrounds plus bright glow
+- cream, beige, or warm off-white is used by default to imply luxury
+
+Corrective move:
+
+- stabilize the neutral scale first
+- return to crisp neutral or slightly cool neutral surfaces unless warmth is purposeful
+- reduce accent usage to actions and a few emphasis points
+- choose restrained contrast over attention-seeking drama
+
+## Shadow Fog And Decorative Glow
+
+Symptoms:
+
+- shadows are broad, blurry, and always present
+- glow is added without a clear source or purpose
+- depth effects obscure edges instead of clarifying them
+
+Corrective move:
+
+- use fewer shadow styles with clearer intent
+- keep glow minimal and rare, limited to active emphasis or subtle separation
+- let borders and contrast carry most separation
+
+## Motion As Decoration
+
+Symptoms:
+
+- everything fades, slides, scales, and blurs at once
+- the UI feels slower after animation is added
+- hover or entrance effects call attention to themselves
+
+Corrective move:
+
+- animate only what improves orientation or feedback
+- shorten durations
+- remove overlapping motion channels on the same element
+
+## False Minimalism
+
+Symptoms:
+
+- the page is sparse but not intentional
+- large empty gaps replace real hierarchy
+- typography is weak, so the interface feels unfinished instead of refined
+
+Corrective move:
+
+- strengthen alignment, scale, and focal contrast
+- strengthen alignment, spacing, and copy hierarchy
+- let whitespace support hierarchy rather than replace it
+- make the primary message more decisive
 
 ## Desktop Shrink-On-Mobile
 
 Symptoms:
 
-- multi-column desktop layouts collapse awkwardly
+- desktop multi-column logic collapses into a long, flat stack
 - emphasis disappears on small screens
-- spacing and tap targets become cramped
+- cards and controls feel cramped or repetitive
 
 Corrective move:
 
-- redesign the mobile sequence
-- simplify supporting content
-- ensure the first viewport communicates the core action or message
+- redesign the mobile reading sequence
+- combine or remove low-value supporting modules
+- preserve the primary action in the first viewport

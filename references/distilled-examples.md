@@ -2,79 +2,92 @@
 
 ## Use This File
 
-Use this file to capture strong Gemini web outputs in a format that can be generalized into reusable rules.
+Use this file when the skill needs concrete examples of the kind of judgment it should generalize.
 
 ## Capture Schema
 
-Record each example with these fields:
+Record each example with:
 
 1. **Task**
-2. **Gemini Judgment**
+2. **Chosen Thesis**
 3. **Observed Strengths**
-4. **Abstracted Rules**
-5. **Failure Signal** (optional when the example reveals an anti-pattern)
+4. **Portable Rules**
+5. **Failure Signal Prevented**
 
-## Capture Template
-
-~~~text
-### Example <id>
+## Worked Example: Premium Landing Hero
 
 Task:
-- <original request>
 
-Gemini Judgment:
-- <summary of the design reasoning>
+- Design a premium landing page hero for a developer tool.
+
+Chosen Thesis:
+
+- `enterprise polish with quiet precision`
 
 Observed Strengths:
-- <specific reason the answer was stronger than baseline model output>
 
-Abstracted Rules:
-- <portable rule 1>
-- <portable rule 2>
+- The hero established a clear first read without relying on dramatic asymmetry.
+- Accent color was limited to the primary CTA and a few signal points.
+- Shadows and glow were subtle enough to support depth without becoming noticeable on their own.
 
-Failure Signal:
-- <what generic model behavior this example helps prevent>
-~~~
+Portable Rules:
 
-## Worked Example: New Landing Section
+- Premium usually means fewer attention-seeking elements, not more decoration.
+- Keep the primary block stable and let the rest support it through restraint.
+- Build a calm neutral system before adding accent color.
+
+Failure Signal Prevented:
+
+- Stops the default hero-plus-grid layout where every module fights for attention or where asymmetry is used to fake originality.
+
+## Worked Example: Dashboard Cleanup
 
 Task:
-- Design a premium landing page section for a developer tool.
 
-Gemini Judgment:
-- The section should feel editorial rather than dashboard-like.
-- The headline should dominate the first read and the supporting grid should recede.
-- Accent color should be reserved for a single call to action and a few signal points.
+- Refactor an analytics dashboard that feels cluttered and low-end.
+
+Chosen Thesis:
+
+- `crisp operational clarity`
 
 Observed Strengths:
-- The answer set a visual thesis before talking about implementation.
-- It improved emphasis through composition rather than ornament.
-- It avoided default equal-weight cards.
 
-Abstracted Rules:
-- When the page needs to feel premium, start by choosing the dominant emotional impression.
-- Let supporting modules reinforce the hero instead of competing with it.
-- Use accent color sparingly so emphasis remains meaningful.
+- The dashboard reduced card count and grouped related metrics.
+- Stronger type hierarchy replaced extra borders and tinted boxes.
+- Motion was limited to quick hover and state feedback rather than ambient animation.
 
-Failure Signal:
-- Prevents the common pattern where a generic hero and feature grid compete for the same visual weight.
+Portable Rules:
 
-## Worked Example: UI Review
+- Cleaner dashboards often come from deleting surfaces and regrouping data.
+- Typography and density are more important than decorative chrome.
+- If every metric card looks equally important, the dashboard will feel noisy.
+
+Failure Signal Prevented:
+
+- Prevents the common pattern of adding more gradients and shadows to a structurally weak dashboard.
+
+## Worked Example: Review Of Generic UI
 
 Task:
-- Review a marketing page and explain why it still looks generic.
 
-Gemini Judgment:
-- The real problem is not color choice but the absence of hierarchy and compositional tension.
-- Repeated card shapes and equal spacing flatten the page.
+- Explain why an existing marketing page still looks AI-generated.
+
+Chosen Thesis:
+
+- Diagnose structure before style.
 
 Observed Strengths:
-- The answer diagnosed a structural issue instead of recommending random styling tweaks.
-- It connected visual weakness to user perception.
 
-Abstracted Rules:
-- Diagnose hierarchy before suggesting decorative changes.
-- Treat repeated equal-weight modules as a signal to recompose the layout.
+- The review identified equal-weight sections and unstable palette use as the real problem.
+- It connected over-animation to a loss of professionalism.
+- It proposed subtraction and regrouping instead of cosmetic flourishes.
 
-Failure Signal:
-- Prevents low-value review output that lists CSS nits without explaining the user impact.
+Portable Rules:
+
+- In reviews, name the structural issue first.
+- Treat overused accent, shadow, and motion as symptoms of missing hierarchy.
+- Recommend what to remove as aggressively as what to add.
+
+Failure Signal Prevented:
+
+- Prevents reviews that list superficial CSS tweaks while missing the actual reason the page feels cheap.

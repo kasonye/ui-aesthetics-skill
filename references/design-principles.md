@@ -2,58 +2,66 @@
 
 ## Use This File
 
-Read this file when the task needs stronger visual direction, when a layout feels generic, or when the user asks for a more refined or premium result.
+Read this file when the UI direction is underspecified, when the output feels generic, or when the user asks for a cleaner and more premium result.
 
-## Principle 1: Start With A Visual Thesis
+## 1. Start With A Visual Thesis
 
-- Name the page's dominant impression before implementing it.
-- Decide whether the interface should feel editorial, product-heavy, atmospheric, crisp, or restrained.
-- Keep the entire composition aligned with that thesis.
+- Name the intended impression before implementation.
+- Good examples: `calm product clarity`, `crisp enterprise polish`, `quiet precision`, `stable product depth`.
+- Keep every major decision aligned to that thesis.
 
-## Principle 2: Build Hierarchy Before Decoration
+## 2. Respect The Requested Scope
 
-- Decide what should be seen first, second, and third.
-- Use size, contrast, spacing, alignment, and density to communicate importance.
-- Fix weak hierarchy before introducing color accents, gradients, or shadows.
+- Lock the artifact type before designing: component, component set, section, or full page.
+- Do not wrap a card or widget request in hero sections, site chrome, or extra marketing structure.
+- If a demo canvas is necessary, keep it quiet and subordinate to the requested artifact.
 
-## Principle 3: Control Information Density
+## 3. Build The Layout Before Styling
 
-- Match density to the page role.
-- Hero sections need fewer simultaneous ideas and stronger emphasis.
-- Dashboards and settings surfaces can carry more density, but only with clear grouping and contrast.
+- Choose a stable primary block for the first read.
+- If the artifact is a page, let the outer composition use the viewport width by default instead of centering the whole experience in a narrow box.
+- Make supporting modules clearly subordinate without relying on visual shock.
+- Use alignment, spacing, width discipline, and scale to create hierarchy.
+- Prefer balanced compositions and predictable alignment over expressive asymmetry.
+- Remove wrappers that do not improve grouping.
 
-## Principle 4: Create Rhythm, Not Uniformity
+## 4. Prefer Simplicity With Intent
 
-- Avoid layouts where every block has the same width, weight, spacing, and treatment.
-- Use repetition selectively and break it deliberately.
-- Let one area dominate and let supporting areas recede.
+- Professional UI usually has fewer simultaneous ideas, not more.
+- Compress secondary information before shrinking the primary message.
+- Let negative space create calm instead of filling every gap.
 
-## Principle 5: Use Color Structurally
+## 5. Use Typography To Carry Authority
 
-- Let color separate roles, not merely decorate surfaces.
-- Reserve the strongest accent for actions or emphasis.
-- Keep neutrals stable so accent color carries meaning.
+- Make headings short, specific, and visually decisive.
+- Preserve the user's copy footprint unless content design is explicitly part of the task.
+- Do not pad ordinary cards with descriptive blurbs just to make them feel designed.
+- Let type size, weight, and line length define importance before using extra decoration.
+- Keep supporting copy readable but quieter than the main message.
 
-## Principle 6: Make Typography Do Real Work
+## 6. Make Components Feel Expensive Through Precision
 
-- Use type scale and weight to create hierarchy before adding extra containers.
-- Short, high-priority copy should read with confidence and restraint.
-- Reduce filler text before shrinking type into illegibility.
+- Keep radii, spacing, and border treatments systematic.
+- Reduce ornamental chrome.
+- Make primary controls feel assertive and secondary controls recede.
+- Avoid giving every card, chip, and button the same visual weight.
 
-## Principle 7: Motion And Interaction Must Clarify
+## 7. Use Depth Sparingly And Coherently
 
-- Use motion to support orientation, emphasis, or feedback.
-- Keep transitions controlled and brief.
-- Do not add motion where a static hierarchy would solve the same problem more clearly.
+- Shadows should describe elevation, not haze the page.
+- Prefer one soft ambient shadow family and one tighter edge-defining shadow family.
+- Highlights should reinforce edge definition or focus.
+- Blur and glow need a job: active state, overlay separation, or restrained material depth.
+- If depth effects draw more attention than the content, reduce them.
 
-## Principle 8: Design Mobile Intentionally
+## 8. Recompose For Mobile
 
-- Recompose layouts for mobile instead of compressing desktop structure.
-- Protect tap targets, spacing, and scannability.
-- Preserve the primary focal point on the first viewport.
+- Redesign reading order for the first mobile viewport.
+- Collapse complexity, not just width.
+- Preserve the same primary action and structural balance.
 
-## Principle 9: Respect Implementation Reality
+## 9. Protect Maintainability
 
-- Prefer a strong, coherent system over many one-off flourishes.
-- Keep components reusable and states explicit.
-- If a styling move is hard to maintain, it needs stronger justification.
+- Favor a strong system over one-off flourishes.
+- If a visual trick cannot be reused or explained, it needs stronger justification.
+- High-end UI is often the result of disciplined subtraction.

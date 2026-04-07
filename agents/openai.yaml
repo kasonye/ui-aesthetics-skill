@@ -1,4 +1,4 @@
 interface:
   display_name: "UI Aesthetics"
-  short_description: "Upgrade web UI generation, review, and refactors"
-  default_prompt: "Use $ui-aesthetics to improve this web UI's visual direction, hierarchy, and UX."
+  short_description: "Make web UI balanced and polished without inflating scope"
+  default_prompt: "Use $ui-aesthetics to make this UI more balanced, professional, and product-grade while preserving the requested scope, avoiding generic AI page chrome, and keeping card copy concise."
