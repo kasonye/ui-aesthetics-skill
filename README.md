@@ -103,6 +103,29 @@ Common invocation patterns:
 - `@ui-aesthetics`
 - prompt-file selection in GitHub Copilot
 
+## Example prompt and outputs
+
+Prompt used for the example:
+
+> 用仓库的skill写一个产品介绍页，配色要亮眼能够吸引人，要有一点动画和光效，有立体感
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>由 Codex + GPT-5.4 生成</strong>
+      <br />
+      <img src="./assets/readme/codex-gpt54-showcase.png" alt="Product landing page example generated with Codex and GPT-5.4" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>由 Claude Code + MiniMax M2.7 生成</strong>
+      <br />
+      <img src="./assets/readme/claude-minimax-m27-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
+    </td>
+  </tr>
+</table>
+
+These two showcase images summarize the kind of bright color, lighting, subtle motion language, and layered depth this skill tends to encourage for marketing-style product pages.
+
 ## Skill routes
 
 The skill is optimized around six working modes:
