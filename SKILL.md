@@ -1,6 +1,6 @@
 ---
 name: ui-aesthetics
-description: Raise frontend visual judgment for web interfaces with a bias toward refined product-grade composition, precise component craftsmanship, disciplined interaction states, controlled motion, and coherent depth systems. Use when Codex needs to generate, review, or refactor a UI that feels generic, cluttered, flat, over-styled, theatrically animated, visually imprecise, or AI-generated, or when the user asks for a cleaner, more premium, more polished, more minimal, more refined, or more product-grade interface.
+description: Raise frontend visual judgment for web interfaces with a bias toward refined product-grade composition, precise component craftsmanship, disciplined interaction states, controlled motion, and coherent depth systems. Use in any supported agent or IDE when generating, reviewing, or refactoring UI that feels generic, cluttered, flat, over-styled, theatrically animated, visually imprecise, or AI-generated, or when the user asks for a cleaner, more premium, more polished, more minimal, more refined, or more product-grade interface.
 ---
 
 # UI Aesthetics
