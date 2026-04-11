@@ -119,7 +119,21 @@ Prompt used for the example:
     <td width="50%" align="center">
       <strong>由 Claude Code + MiniMax M2.7 生成</strong>
       <br />
-      <img src="./assets/readme/claude-minimax-m27-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
+      <img src="assets/readme/cc-minimax-m27-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <strong>由 Claude Code + Claude Opus 4.6 生成</strong>
+      <br />
+      <img src="./assets/readme/cc-claude-opus-46-showcase.png" alt="Product landing page example generated with Codex and GPT-5.4" width="100%" />
+    </td>
+    <td width="50%" align="center">
+      <strong>由 Claude Code + GLM-5.1 生成</strong>
+      <br />
+      <img src="assets/readme/cc-glm-51-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
     </td>
   </tr>
 </table>
