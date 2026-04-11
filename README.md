@@ -138,7 +138,7 @@ Prompt used for the example:
   </tr>
 </table>
 
-These two showcase images summarize the kind of bright color, lighting, subtle motion language, and layered depth this skill tends to encourage for marketing-style product pages.
+These four showcase images summarize the kind of bright color, lighting, subtle motion language, and layered depth this skill tends to encourage for marketing-style product pages.
 
 ## Skill routes
 
