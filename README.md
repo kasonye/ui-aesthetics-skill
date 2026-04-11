@@ -1,5 +1,10 @@
 # UI Aesthetics
 
+[![GitHub Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/kasonye/ui-aesthetics-skill)
+[![Linux DO](https://img.shields.io/badge/Linux-DO-f5b301?style=flat-square&labelColor=1c1c1e&logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNsaXBQYXRoIGlkPSJhIj48Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI0NyIvPjwvY2xpcFBhdGg+PGNpcmNsZSBmaWxsPSIjZjBmMGYwIiBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiLz48cmVjdCBmaWxsPSIjMWMxYzFlIiBjbGlwLXBhdGg9InVybCgjYSkiIHg9IjEwIiB5PSIxMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIvPjxyZWN0IGZpbGw9IiNmMGYwZjAiIGNsaXAtcGF0aD0idXJsKCNhKSIgeD0iMTAiIHk9IjQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIi8+PHJlY3QgZmlsbD0iI2ZmYjAwMyIgY2xpcC1wYXRoPSJ1cmwoI2EpIiB4PSIxMCIgeT0iODAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMzAiLz48L3N2Zz4=)](https://linux.do/)
+[![Release](https://img.shields.io/badge/release-v1.0.0-22c55e?style=flat-square)](https://github.com/kasonye/ui-aesthetics-skill/releases)
+[![GitHub Repo stars](https://img.shields.io/github/stars/kasonye/ui-aesthetics-skill?style=flat-square)](https://github.com/kasonye/ui-aesthetics-skill/stargazers)
+
 Multi-platform AI skill pack for generating, reviewing, and refactoring web UI with stronger visual judgment.
 
 `ui-aesthetics` helps agents produce interfaces that feel more refined, balanced, precise, and product-grade without inflating scope or relying on fake luxury cues.
