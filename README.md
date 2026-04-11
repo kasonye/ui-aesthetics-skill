@@ -1,8 +1,10 @@
 # UI Aesthetics
 
+English | [简体中文](./README.zh-CN.md)
+
 [![GitHub Repo](https://img.shields.io/badge/github-repo-blue?logo=github)](https://github.com/kasonye/ui-aesthetics-skill)
 [![Linux DO](https://img.shields.io/badge/Linux-DO-f5b301?style=flat-square&labelColor=1c1c1e&logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNsaXBQYXRoIGlkPSJhIj48Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI0NyIvPjwvY2xpcFBhdGg+PGNpcmNsZSBmaWxsPSIjZjBmMGYwIiBjeD0iNjAiIGN5PSI2MCIgcj0iNTAiLz48cmVjdCBmaWxsPSIjMWMxYzFlIiBjbGlwLXBhdGg9InVybCgjYSkiIHg9IjEwIiB5PSIxMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIzMCIvPjxyZWN0IGZpbGw9IiNmMGYwZjAiIGNsaXAtcGF0aD0idXJsKCNhKSIgeD0iMTAiIHk9IjQwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIi8+PHJlY3QgZmlsbD0iI2ZmYjAwMyIgY2xpcC1wYXRoPSJ1cmwoI2EpIiB4PSIxMCIgeT0iODAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMzAiLz48L3N2Zz4=)](https://linux.do/)
-[![Release](https://img.shields.io/badge/release-v1.0.0-22c55e?style=flat-square)](https://github.com/kasonye/ui-aesthetics-skill/releases)
+[![Release](https://img.shields.io/github/v/tag/kasonye/ui-aesthetics-skill?sort=semver&style=flat-square&label=release)](https://github.com/kasonye/ui-aesthetics-skill/releases/latest)
 [![GitHub Repo stars](https://img.shields.io/github/stars/kasonye/ui-aesthetics-skill?style=flat-square)](https://github.com/kasonye/ui-aesthetics-skill/stargazers)
 
 Multi-platform AI skill pack for generating, reviewing, and refactoring web UI with stronger visual judgment.
@@ -112,17 +114,17 @@ Common invocation patterns:
 
 Prompt used for the example:
 
-> 用仓库的skill写一个产品介绍页，配色要亮眼能够吸引人，要有一点动画和光效，有立体感
+> Use the repository skill to create a product landing page. Make the colors bright and attention-grabbing, add a bit of motion and lighting, and keep some dimensional depth.
 
 <table>
   <tr>
     <td width="50%" align="center">
-      <strong>由 Codex + GPT-5.4 生成</strong>
+      <strong>Generated with Codex + GPT-5.4</strong>
       <br />
       <img src="./assets/readme/codex-gpt54-showcase.png" alt="Product landing page example generated with Codex and GPT-5.4" width="100%" />
     </td>
     <td width="50%" align="center">
-      <strong>由 Claude Code + MiniMax M2.7 生成</strong>
+      <strong>Generated with Claude Code + MiniMax M2.7</strong>
       <br />
       <img src="assets/readme/cc-minimax-m27-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
     </td>
@@ -131,14 +133,14 @@ Prompt used for the example:
 <table>
   <tr>
     <td width="50%" align="center">
-      <strong>由 Claude Code + Claude Opus 4.6 生成</strong>
+      <strong>Generated with Claude Code + Claude Opus 4.6</strong>
       <br />
-      <img src="./assets/readme/cc-claude-opus-46-showcase.png" alt="Product landing page example generated with Codex and GPT-5.4" width="100%" />
+      <img src="./assets/readme/cc-claude-opus-46-showcase.png" alt="Product landing page example generated with Claude Code and Claude Opus 4.6" width="100%" />
     </td>
     <td width="50%" align="center">
-      <strong>由 Claude Code + GLM-5.1 生成</strong>
+      <strong>Generated with Claude Code + GLM-5.1</strong>
       <br />
-      <img src="assets/readme/cc-glm-51-showcase.png" alt="Product landing page example generated with Claude Code and MiniMax M2.7" width="100%" />
+      <img src="assets/readme/cc-glm-51-showcase.png" alt="Product landing page example generated with Claude Code and GLM-5.1" width="100%" />
     </td>
   </tr>
 </table>
@@ -182,6 +184,7 @@ _Last verified against public docs and reference repos on April 11, 2026._
 .
 |- SKILL.md
 |- README.md
+|- README.zh-CN.md
 |- .shared/ui-aesthetics/
 |- references/
 |- .codex/skills/ui-aesthetics/
@@ -203,4 +206,4 @@ Recommended update flow:
 1. edit `SKILL.md`
 2. refresh `.shared/ui-aesthetics/` if the condensed guidance changed
 3. update platform wrappers only when adapter format or invocation behavior changes
-4. update this `README.md` when installation, supported platforms, or usage expectations change
+4. update both `README.md` and `README.zh-CN.md` when installation, supported platforms, or usage expectations change
