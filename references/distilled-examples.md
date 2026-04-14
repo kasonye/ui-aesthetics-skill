@@ -195,3 +195,55 @@ Portable Rules:
 Failure Signal Prevented:
 
 - Prevents the common dark-mode failure where blur, glow, and equal-elevation panels turn the interface into premium-looking fog.
+
+## Worked Example: Settings Page De-Cardification
+
+Task:
+
+- Refactor a settings page that feels fragmented because every section sits inside its own card.
+
+Chosen Thesis:
+
+- `flat operational clarity`
+
+Observed Strengths:
+
+- The page stopped relying on repeated section cards and let spacing plus heading contrast define each group.
+- The primary scan path became more stable because headings, controls, and descriptions aligned to one structural axis.
+- Containment was reserved for the few areas that truly needed interruption or higher-risk emphasis.
+
+Portable Rules:
+
+- Settings flows often become clearer when repeated same-level cards are removed.
+- Spacing rhythm and heading contrast can replace ordinary section containers.
+- Reserve contained surfaces for exceptions, not the default page structure.
+
+Failure Signal Prevented:
+
+- Prevents settings pages from feeling padded, repetitive, and visually over-separated despite simple underlying structure.
+
+## Worked Example: Flat Data And Activity Surfaces
+
+Task:
+
+- Refactor a product page with an audit log, a wide table, and heavy panel framing.
+
+Chosen Thesis:
+
+- `continuous data flow`
+
+Observed Strengths:
+
+- The audit log flattened back to the page plane and kept row actions quiet until needed.
+- The wide data table dropped its outer panel and used structural context instead of decorative framing.
+- Containment remained only for expanded technical detail, detached tools, and overlay behavior.
+
+Portable Rules:
+
+- Dense logs and tables usually benefit from the base page plane more than from repeated outer panels.
+- Keep filters and row actions structurally light unless they need detached interaction.
+- Use contained surfaces for expanded JSON, diff views, or elevated control palettes rather than ordinary structure.
+
+Failure Signal Prevented:
+
+- Prevents dense operational pages from wasting space on redundant framing while still protecting specialized interactions.

@@ -11,6 +11,7 @@ Use this file to decide which detailed reference file to open from `../../refere
 | Motion timing or transition quality needs discipline | `../../references/motion-principles.md` |
 | Specific motion patterns or reveal behavior need correction | `../../references/motion-patterns.md` |
 | Shadow, blur, glow, highlight, or elevation logic is weak | `../../references/depth-lighting-system.md` |
+| Page feels over-cardified, fragmented, or padded by repeated panels | `../../references/non-card-layouts.md` |
 | The user asks for a stronger stylistic personality | `../../references/style-archetypes.md` |
 | The result looks polished but still feels AI-generated or cheap | `../../references/anti-patterns.md` |
 | You need a structured critique format | `../../references/review-rubric.md` |
